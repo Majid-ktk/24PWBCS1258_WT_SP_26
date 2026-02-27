@@ -1,0 +1,39 @@
+<form>
+
+<label>
+    Full Name:
+</label><br>
+<input type="text" name="fullname" placeholder="Enter your full name" required><br><br>
+
+<label>
+    Registration Number:
+</label><br>
+<input type="text" name="regnumber" placeholder="Enter your registration number" required><br><br>
+
+<label>
+    Email:
+</label><br>
+<input type="email" name="email" placeholder="Enter your email" required><br><br>
+<label>
+    Password:
+</label><br>
+<input type="password" name="password" placeholder="Enter your password" required><br><br>
+<label>
+    Select the course:
+</label><br>
+<select name="course" required>
+    <option value="">--choose--</option>
+    <option>CS 224L - Web Technologies</option>
+    <option>CS 111 - Programming Fundamentals</option>
+  </select><br><br>
+  <label>
+    Semester:
+  </label><br>
+  <input type="radio" name="semester" value="1" required>Semester 1<br>
+  <input type="radio" name="semester" value="2" required>Semester 2<br>
+  <input type="radio" name="semester" value="3" required>Semester 3<br><br>
+
+  <input type="checkbox" name="terms" required>
+  <label>I agree to terms and conditions</label>
+<input type="submit" value="Submit Registration">
+</form>
