@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Properties</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/display.css">
+</head>
+<body>
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../lab02/profile.html">Profile</a>
+  </nav>
+  <div class="container">
+    <h1>Display Property Showcase</h1>
+
+    <h2>Block vs Inline vs Inline-Block</h2>
+    <div class="demo-block">Block — takes full width, stacks</div>
+    <div class="demo-block">Second block element below the first</div>
+    <span class="demo-inline">Inline A</span>
+    <span class="demo-inline">Inline B</span>
+    <span class="demo-inline">Inline C</span>
+    <div class="iblock-row">
+      <div class="demo-iblock">Inline-Block 1</div>
+      <div class="demo-iblock">Inline-Block 2</div>
+      <div class="demo-iblock">Inline-Block 3</div>
+    </div>
+
+    <h2>Display None vs Visibility Hidden</h2>
+    <p>Line before the hidden element.</p>
+    <p class="d-none">display: none — completely removed, no gap</p>
+    <p>Line after display none — no gap above this.</p>
+    <p>Line before the invisible element.</p>
+    <p class="v-hidden">visibility: hidden — invisible but space stays</p>
+    <p>Line after visibility hidden — gap remains above this.</p>
+
+    <h2>Table Layout Without Table Tags</h2>
+    <div class="fake-table">
+      <div class="fake-row">
+        <div class="fake-cell header-cell">Name</div>
+        <div class="fake-cell header-cell">Subject</div>
+        <div class="fake-cell header-cell">Marks</div>
+      </div>
+      <div class="fake-row">
+        <div class="fake-cell">Abdul Majid</div>
+        <div class="fake-cell">Web Technologies</div>
+        <div class="fake-cell">85</div>
+      </div>
+    </div>
+
+    <h2>Responsive Display — resize the browser window</h2>
+    <div class="show-desktop">Only visible on screens wider than 600px</div>
+    <div class="show-mobile">Only visible on screens narrower than 600px</div>
+  </div>
+</body>
+</html>
