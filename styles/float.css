@@ -1,0 +1,55 @@
+/* Clearfix — forces parent to contain floated children */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Sidebar floated to the right */
+.mag-sidebar {
+  float: right;
+  width: 26%;
+  background-color: #f0f4f8;
+  padding: 16px;
+  border-left: 4px solid navy;
+  margin-left: 20px;
+}
+
+/* Main content floated to the left */
+.mag-main {
+  float: left;
+  width: 70%;
+}
+
+/* Article image — float left with text wrapping right */
+.float-left {
+  float: left;
+  margin: 0 16px 12px 0;
+  border-radius: 6px;
+}
+
+/* Article image — float right with text wrapping left */
+.float-right {
+  float: right;
+  margin: 0 0 12px 16px;
+  border-radius: 6px;
+}
+
+/* Mobile — remove all floats, stack everything */
+@media (max-width: 768px) {
+  .mag-sidebar, .mag-main {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .mag-sidebar {
+    border-left: none;
+    border-top: 4px solid navy;
+    margin-top: 24px;
+  }
+  .float-left, .float-right {
+    float: none;
+    display: block;
+    margin: 0 auto 12px auto;
+  }
+}

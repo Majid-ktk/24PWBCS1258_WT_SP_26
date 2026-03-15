@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Float Layout</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/float.css">
+</head>
+<body>
+  <nav><a href="../../index.html">Home</a></nav>
+  <div class="container">
+    <h1>Magazine Layout Using Floats</h1>
+
+    <div class="mag-wrapper clearfix">
+
+      <aside class="mag-sidebar">
+        <h3>Latest News</h3>
+        <p>Story about web development trends this year.</p>
+        <p>Story about new CSS features and updates.</p>
+        <p>Story about responsive design best practices.</p>
+      </aside>
+
+      <main class="mag-main">
+        <h2>Web Technologies — UET Peshawar</h2>
+
+        <img src="https://picsum.photos/200/140?10" alt="Article image" class="float-left">
+        <p>This is the main article content. The image is floated left so the text wraps around it on the right side. This is exactly how magazine and newspaper layouts work. The text continues to flow beside the image and then goes below it once it passes the image height.</p>
+        <p>A second paragraph continues here. The clearfix on the parent prevents the layout from collapsing when all children are floated.</p>
+        <div class="clearfix"></div>
+
+        <img src="https://picsum.photos/200/140?11" alt="Article image 2" class="float-right">
+        <p>This section has an image floated to the right instead. The text now wraps on the left side of the image. Both float directions work the same way — just mirrored.</p>
+        <p>More content to show the text wrapping properly around the right-floated image.</p>
+        <div class="clearfix"></div>
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>
