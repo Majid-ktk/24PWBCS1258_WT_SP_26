@@ -1,0 +1,52 @@
+<title>CSS Positioning</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/position.css">
+</head>
+<body>
+  <nav class="fixed-nav">
+    <a href="../../index.html">Home</a>
+    <a href="#">Positioning Demo</a>
+  </nav>
+
+  <div style="margin-top: 60px;">
+  <div class="container">
+    <h1>CSS Positioning</h1>
+
+    <h2>Relative Position</h2>
+    <p>Normal paragraph above the relative element.</p>
+    <div class="pos-relative">
+      I moved 20px down and 20px right from my normal spot.
+    </div>
+    <p>Normal paragraph below — the original space is still there.</p>
+
+    <h2>Absolute Position</h2>
+    <div class="pos-parent">
+      <p>Parent box (position: relative)</p>
+      <div class="pos-absolute">Absolute — top right corner</div>
+    </div>
+
+    <h2>Z-Index Layering</h2>
+    <div class="z-demo">
+      <div class="z-box z1">Z: 1</div>
+      <div class="z-box z2">Z: 2</div>
+      <div class="z-box z3">Z: 3 top</div>
+    </div>
+
+    <h2>Modal Dialog with Absolute Positioning</h2>
+    <button class="open-btn" onclick="document.getElementById('modal').style.display='flex'">
+      Open Modal
+    </button>
+    <div id="modal" class="modal-overlay">
+      <div class="modal-box">
+        <h3>Modal Dialog</h3>
+        <p>Centered on screen using position fixed and flexbox.</p>
+        <button onclick="document.getElementById('modal').style.display='none'">
+          Close
+        </button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</body>
+</html>

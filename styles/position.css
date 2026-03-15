@@ -1,0 +1,89 @@
+/* Fixed nav — always stays at top when scrolling */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: navy;
+  z-index: 999;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.fixed-nav a { color: white; text-decoration: none; padding: 14px 16px; display: inline-block; }
+
+/* Relative — moves from normal position, original space stays */
+.pos-relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: #d0e8ff;
+  border: 2px solid steelblue;
+  padding: 14px;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+/* Parent needs position: relative for absolute child to anchor to */
+.pos-parent {
+  position: relative;
+  background-color: #f0f0f0;
+  min-height: 100px;
+  padding: 14px;
+  border: 2px solid gray;
+  margin-bottom: 24px;
+}
+
+/* Absolute — removed from flow, placed inside the parent */
+.pos-absolute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: steelblue;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+/* Z-index demo boxes */
+.z-demo  { position: relative; height: 120px; margin: 20px 0 60px 0; }
+.z-box   { position: absolute; width: 130px; height: 80px; color: white;
+           font-weight: bold; display: flex; align-items: center;
+           justify-content: center; border-radius: 6px; }
+.z1 { background-color: tomato;     left: 0;   top: 10px; z-index: 1; }
+.z2 { background-color: steelblue;  left: 60px; top: 20px; z-index: 2; }
+.z3 { background-color: seagreen;   left: 120px; top: 5px;  z-index: 3; }
+
+/* Modal — fixed overlay covers whole screen */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.modal-box {
+  background: white;
+  padding: 32px;
+  border-radius: 10px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+}
+.modal-box button, .open-btn {
+  margin-top: 14px;
+  padding: 10px 26px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Mobile — fixed nav becomes static, modal goes full screen */
+@media (max-width: 600px) {
+  .fixed-nav { position: static; }
+  .modal-box { width: 100%; min-height: 60vh; border-radius: 0; }
+}
