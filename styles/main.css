@@ -1,0 +1,107 @@
+    /* 1. Universal selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+    /* 2. Element selector */
+    p {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    }
+    
+    /* 3. Class selector */
+    .highlight {
+    background-color: yellow;
+    padding: 4px 8px;
+    }
+    
+    /* 4. ID selector */
+    #main-box {
+    border: 2px solid navy;
+    padding: 16px;
+    margin: 20px 0;
+    border-radius: 6px;
+    }
+    
+    /* 5. Element + class together */
+    p.highlight {
+    font-weight: bold;
+    }
+    
+    /* Attribute selector 1 - has any href */
+    [href] {
+    text-decoration: underline;
+    }
+    
+    /* Attribute selector 2 - starts with https */
+    [href^="https"] {
+    color: royalblue;
+    font-weight: bold;
+    }
+    
+    /* Attribute selector 3 - email input */
+    [type="email"] {
+    border: 2px solid darkorange;
+    padding: 4px;
+    }
+    
+    /* Combinator 1 - descendant */
+    #main-box p {
+    color: darkblue;
+    }
+    
+    /* Combinator 2 - direct child only */
+    #main-box > p {
+    font-weight: bold;
+    }
+    
+    /* Combinator 3 - adjacent sibling */
+    h3 + p {
+    background-color: lightyellow;
+    padding: 4px;
+    }
+    
+    /* Combinator 4 - general sibling */
+    h3 ~ p {
+    border-left: 3px solid orange;
+    padding-left: 8px;
+    }
+    
+    /* Pseudo-class 1 and 2 - link states */
+    a:link    { color: blue; }
+    a:visited { color: purple; }
+    a:hover   { color: red; text-decoration: none; }
+    
+    /* Pseudo-class 3 - focus on input */
+    input:focus {
+    outline: 3px solid royalblue;
+    border-radius: 4px;
+    }
+    
+    /* Pseudo-class 4 - first-child */
+    .my-list li:first-child {
+    color: green;
+    font-weight: bold;
+    }
+    
+    /* Pseudo-class 5 - last-child */
+    .my-list li:last-child {
+    color: red;
+    }
+    
+    /* Pseudo-element 1 - before */
+    .tip::before {
+    content: 'Tip: ';
+    font-weight: bold;
+    }
+    
+    /* Pseudo-element 2 - after */
+    .done::after {
+    content: ' Done';
+    color: green;
+    font-weight: bold;
+    }
