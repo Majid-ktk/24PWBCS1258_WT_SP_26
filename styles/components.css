@@ -78,3 +78,58 @@ img {
 .img-card:hover .img-overlay {
   opacity: 1;
 }
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.btn-primary   { background-color: navy; color: white; }
+.btn-secondary { background-color: gray; color: white; }
+.btn-danger    { background-color: crimson; color: white; }
+
+.btn-outline {
+  background-color: white;
+  border: 2px solid navy;
+  color: navy;
+}
+
+.btn-pill {
+  background-color: navy;
+  color: white;
+  border-radius: 50px;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, navy, steelblue);
+  color: white;
+}
+
+.btn-sm { padding: 6px 14px; font-size: 13px; background-color: navy; color: white; }
+.btn-lg { padding: 14px 30px; font-size: 18px; background-color: navy; color: white; }
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0,0,0,0.2);
+  filter: brightness(1.1);
+}
+
+.btn:focus {
+  outline: 3px solid steelblue;
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
