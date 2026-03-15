@@ -249,3 +249,42 @@ input[type='submit']:hover {
   font-weight: bold;
   margin-bottom: 12px;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+thead tr {
+  background-color: navy;
+  color: white;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #EBF3FB;
+}
+
+tbody tr:hover {
+  background-color: #D6E8F7;
+  cursor: default;
+}
+
+.lunch-row {
+  background-color: #FFF3CD;
+  font-style: italic;
+  color: #7a5c00;
+}
+
+.lunch-row:hover {
+  background-color: #FFE69C;
+}
