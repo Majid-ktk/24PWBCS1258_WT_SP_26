@@ -52,6 +52,91 @@
 
 /* ── Dark mode — detects system preference ── */
 @media (prefers-color-scheme: dark) {
-  body { background-color: #111; color: #eee; }
+  body { background-color: #111; color: #26b15d; }
   .bp-box { background-color: #1F4E79; }
 }
+/* Table wrapper allows horizontal scroll on small screens */
+.table-wrapper { overflow-x: auto; }
+.rsp-table { width: 100%; border-collapse: collapse; background: white; font-size: 15px; }
+.rsp-table thead tr { background-color: navy; color: rgb(1, 14, 86); }
+.rsp-table th, .rsp-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #5d8742; }
+.rsp-table tbody tr:nth-child(even) { background-color: #1e5d9c; }
+.rsp-table tbody tr:hover { background-color: #3a7aae; }
+/* Mobile — convert rows to cards */
+@media (max-width: 600px) {
+  .rsp-table thead { display: none; }
+  .rsp-table, .rsp-table tbody, .rsp-table tr, .rsp-table td { display: block; width: 100%; }
+  .rsp-table tr { background: white; margin-bottom: 14px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 10px; }
+  .rsp-table td { padding: 8px 12px; border: none; }
+  .rsp-table td::before { content: attr(data-label); font-weight: bold; color: navy; display: inline-block; width: 120px; }
+}
+/* Hero — mobile base */
+.lp-hero { background: linear-gradient(to bottom, navy, steelblue); color: white; text-align: center; padding: 50px 20px; }
+.lp-hero h1 { font-size: 1.8rem; margin-bottom: 10px; }
+.lp-hero p  { font-size: 1rem; opacity: 0.9; margin-bottom: 20px; }
+.lp-section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
+.lp-section h2 { text-align: center; margin-bottom: 24px; }
+/* Features — stacked on mobile */
+.lp-features { display: flex; flex-wrap: wrap; gap: 16px; }
+.lp-feature  { flex: 1 1 100%; background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.lp-feature h3 { color: navy; margin-bottom: 8px; }
+/* Labs completed */
+.lp-dark { background-color: #f0f4f8; }
+.lp-labs { display: flex; flex-wrap: wrap; gap: 14px; }
+.lp-lab  { flex: 1 1 100%; background: white; padding: 16px; border-radius: 8px; border-left: 4px solid navy; }
+.lp-footer { background-color: navy; color: white; text-align: center; padding: 20px; }
+.lp-footer a { color: lightsteelblue; }
+/* Tablet — features go 2 per row */
+@media (min-width: 600px) {
+  .lp-hero h1 { font-size: 2.2rem; }
+  .lp-feature { flex: 1 1 calc(50% - 16px); }
+  .lp-lab     { flex: 1 1 calc(50% - 14px); }
+}
+/* Desktop — features 3 per row, labs 4 per row */
+@media (min-width: 1024px) {
+  .lp-hero { padding: 80px 20px; }
+  .lp-hero h1 { font-size: 3rem; }
+  .lp-feature { flex: 1 1 calc(33% - 16px); }
+  .lp-lab     { flex: 1 1 calc(25% - 14px); }
+}
+
+/* Base — mobile phones under 480px */
+*, *::before, *::after { box-sizing: border-box; }
+.rsp-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.bp-indicator {
+  position: fixed; bottom: 10px; right: 10px;
+  background: crimson; color: white;
+  padding: 6px 14px; border-radius: 20px;
+  font-size: 12px; font-weight: bold; z-index: 9999;
+}
+.bp-indicator::after { content: 'XS — Mobile'; }
+/* Small mobile — 480px and wider */
+@media (min-width: 480px) {
+  .bp-indicator { background: orangered; }
+  .bp-indicator::after { content: 'SM — Large Phone'; }
+}
+/* Tablet — 768px and wider */
+@media (min-width: 768px) {
+  .bp-indicator { background: goldenrod; }
+  .bp-indicator::after { content: 'MD — Tablet'; }
+}
+/* Small desktop — 1024px and wider */
+@media (min-width: 1024px) {
+  .bp-indicator { background: steelblue; }
+  .bp-indicator::after { content: 'LG — Small Desktop'; }
+}
+/* Standard desktop — 1200px and wider */
+@media (min-width: 1200px) {
+  .bp-indicator { background: seagreen; }
+  .bp-indicator::after { content: 'XL — Desktop'; }
+  .rsp-container { padding: 0 24px; }
+}
+/* Large desktop — 1400px and wider */
+@media (min-width: 1400px) {
+  .bp-indicator { background: navy; }
+  .bp-indicator::after { content: 'XXL — Large Desktop'; }}
