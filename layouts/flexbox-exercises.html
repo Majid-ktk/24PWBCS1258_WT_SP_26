@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Navigation</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/flexbox.css">
+</head>
+<body>
+
+  <header class="flex-header">
+    <div class="logo">Abdul Majid</div>
+    <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+    <nav class="flex-nav" id="flex-nav">
+      <a href="../../index.html">Home</a>
+      <a href="../../lab02/profile.html">Profile</a>
+      <a href="../../lab02/schedule.html">Schedule</a>
+      <div class="fdrop">
+        <a href="#">Labs &#9660;</a>
+        <div class="fdrop-menu">
+          <a href="../../lab02/registration.html">Registration</a>
+          <a href="../../lab03-css/exercises/selectors.html">Selectors</a>
+          <a href="../../lab03-css/exercises/typography.html">Typography</a>
+        </div>
+      </div>
+      <a href="https://github.com/majid-ktk" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Flexbox Navigation System</h1>
+    <p>On mobile the links collapse into a hamburger button. Click it to toggle the menu.</p>
+
+    <h2>Vertical Sidebar Navigation</h2>
+    <div class="sidebar-wrap">
+      <nav class="sidebar-nav">
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Schedule</a>
+        <a href="#">Settings</a>
+      </nav>
+      <div class="sidebar-content">
+        <p>Main content sits next to the sidebar on desktop and moves below it on mobile.</p>
+      </div>
+    </div>
+
+    <!-- Responsive Equal-Height Card Layout -->
+    <h2>Responsive Equal-Height Card Layout</h2>
+    <p>Cards stay equal height even when content differs. Button always sits at the bottom.</p>
+
+    <div class="card-row">
+
+      <div class="fx-card">
+        <img src="https://picsum.photos/300/160?20" alt="Web Dev">
+        <div class="fx-card-body">
+          <h3>Web Development</h3>
+          <p>
+            Learn HTML, CSS and JavaScript from the very beginning. This card has more
+            text to demonstrate that all cards stay the same height regardless of content.
+          </p>
+          <button class="btn">Enroll Now</button>
+        </div>
+      </div>
+
+      <div class="fx-card">
+        <img src="https://picsum.photos/300/160?21" alt="Python">
+        <div class="fx-card-body">
+          <h3>Python</h3>
+          <p>Start programming with Python from scratch.</p>
+          <button class="btn">Enroll Now</button>
+        </div>
+      </div>
+
+      <div class="fx-card">
+        <img src="https://picsum.photos/300/160?22" alt="Database">
+        <div class="fx-card-body">
+          <h3>Database Systems</h3>
+          <p>Understand SQL and relational database design properly from fundamentals.</p>
+          <button class="btn">Enroll Now</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('flex-nav').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
