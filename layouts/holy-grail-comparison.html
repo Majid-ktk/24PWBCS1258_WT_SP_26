@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail Layout</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/float.css">
+  <link rel="stylesheet" href="../styles/flexbox.css">
+  <link rel="stylesheet" href="../styles/grid.css">
+</head>
+<body>
+  <nav><a href="../../index.html">Home</a></nav>
+  <div class="container">
+    <h1>Holy Grail Layout — Three Methods Compared</h1>
+
+    <h2>Method 1 — Float</h2>
+    <div class="hg-demo hg-float-wrap">
+      <div class="hg-header">Header</div>
+      <div class="hg-float-body clearfix">
+        <aside class="hg-left">Left Sidebar</aside>
+        <aside class="hg-right-f">Right Sidebar</aside>
+        <main  class="hg-main-f">Main Content (Float)</main>
+      </div>
+      <div class="hg-footer">Footer</div>
+    </div>
+
+    <h2>Method 2 — Flexbox</h2>
+    <div class="hg-demo hg-flex-wrap">
+      <div class="hg-header">Header</div>
+      <div class="hg-flex-body">
+        <aside class="hg-left">Left Sidebar</aside>
+        <main  class="hg-main-fx">Main Content (Flexbox)</main>
+        <aside class="hg-right">Right Sidebar</aside>
+      </div>
+      <div class="hg-footer">Footer</div>
+    </div>
+
+    <h2>Method 3 — CSS Grid</h2>
+    <div class="hg-demo hg-grid-wrap">
+      <header class="hg-header">Header</header>
+      <aside  class="hg-left">Left Sidebar</aside>
+      <main   class="hg-main-g">Main Content (Grid)</main>
+      <aside  class="hg-right">Right Sidebar</aside>
+      <footer class="hg-footer">Footer</footer>
+    </div>
+
+  </div>
+</body>
+</html>
+
