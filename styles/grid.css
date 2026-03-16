@@ -136,3 +136,65 @@
   .product-grid { grid-template-columns: 1fr; }
 }
 
+.db-body { margin: 0; padding: 0; background: #f4f6f9; }
+
+/* Two-column grid — fixed sidebar + flexible main */
+.dashboard {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.db-sidebar { background-color: navy; color: white; display: flex; flex-direction: column; }
+.db-logo    { padding: 22px 20px; font-size: 1.2rem; font-weight: bold;
+              border-bottom: 1px solid rgba(255,255,255,0.15); }
+.db-nav     { display: flex; flex-direction: column; }
+.db-nav a   { color: rgba(255,255,255,0.85); text-decoration: none;
+              padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.08);
+              transition: background 0.3s; }
+.db-nav a:hover { background: rgba(255,255,255,0.1); }
+
+/* Main area */
+.db-main { display: flex; flex-direction: column; }
+.db-header {
+  background: white; padding: 20px 28px;
+  border-bottom: 1px solid #ddd;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+/* Stat cards row — flexbox inside grid */
+.db-stats {
+  display: flex;
+  gap: 16px;
+  padding: 24px 28px;
+  flex-wrap: wrap;
+}
+.stat-card {
+  flex: 1 1 150px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-top: 4px solid steelblue;
+}
+.stat-card h3 { font-size: 2rem; color: navy; margin: 0; }
+.stat-card p  { color: #666; margin: 6px 0 0; font-size: 14px; }
+
+.db-content { margin: 0 28px; background: white; padding: 20px;
+              border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+/* Tablet — sidebar becomes horizontal top bar */
+@media (max-width: 768px) {
+  .dashboard  { grid-template-columns: 1fr; }
+  .db-sidebar { flex-direction: row; flex-wrap: wrap; }
+  .db-nav     { flex-direction: row; flex-wrap: wrap; }
+  .db-stats   { padding: 16px; }
+  .stat-card  { flex: 1 1 calc(50% - 16px); }
+}
+
+/* Mobile — stat cards full width */
+@media (max-width: 480px) {
+  .stat-card { flex: 1 1 100%; }
+}

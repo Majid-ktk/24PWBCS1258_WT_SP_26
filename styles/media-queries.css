@@ -1,0 +1,57 @@
+/* ── Mobile base — applies to all screen sizes first ── */
+.bp-bar { background-color: crimson; color: white; text-align: center; padding: 12px; font-weight: bold; }
+
+/* Only the mobile span visible on small screens */
+.bp-m { display: inline; }
+.bp-t { display: none; }
+.bp-d { display: none; }
+
+.rsp-h1 { font-size: 1.4rem; }
+.rsp-p  { font-size: 14px; }
+
+.bp-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+.bp-box {
+  background-color: steelblue;
+  color: white;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* ── Tablet — 600px and wider ── */
+@media (min-width: 600px) {
+  .bp-bar { background-color: goldenrod; }
+  .bp-m   { display: none; }
+  .bp-t   { display: inline; }
+  .rsp-h1 { font-size: 1.9rem; }
+  .rsp-p  { font-size: 16px; }
+  .bp-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Desktop — 1024px and wider ── */
+@media (min-width: 1024px) {
+  .bp-bar { background-color: seagreen; }
+  .bp-t   { display: none; }
+  .bp-d   { display: inline; }
+  .rsp-h1 { font-size: 2.5rem; }
+  .rsp-p  { font-size: 18px; }
+  .bp-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ── Large desktop — 1200px and wider ── */
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+
+/* ── Dark mode — detects system preference ── */
+@media (prefers-color-scheme: dark) {
+  body { background-color: #111; color: #eee; }
+  .bp-box { background-color: #1F4E79; }
+}
