@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Table</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/media-queries.css">
+</head>
+<body>
+  <nav><a href="../../index.html">Home</a></nav>
+  <div class="container">
+    <h1>Responsive Data Table</h1>
+    <p>On mobile each row becomes a card. Resize to see the change.</p>
+    <div class="table-wrapper">
+      <table class="rsp-table">
+        <thead>
+          <tr>
+            <th>Name</th><th>Subject</th><th>Marks</th><th>Grade</th><th>Semester</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Name">Abdul Majid</td>
+            <td data-label="Subject">Web Technologies</td>
+            <td data-label="Marks">85</td>
+            <td data-label="Grade">A</td>
+            <td data-label="Semester">4th</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Ahmad Khan</td>
+            <td data-label="Subject">Database Systems</td>
+            <td data-label="Marks">78</td>
+            <td data-label="Grade">B+</td>
+            <td data-label="Semester">4th</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Sara Ali</td>
+            <td data-label="Subject">Programming</td>
+            <td data-label="Marks">91</td>
+            <td data-label="Grade">A+</td>
+            <td data-label="Semester">4th</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
