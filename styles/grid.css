@@ -1,0 +1,50 @@
+/* 4-column grid, each row 200px tall */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 10px;
+  padding: 20px 0;
+}
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+.photo-item:hover img { transform: scale(1.08); }
+
+/* Hover overlay with label */
+.photo-label {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 80, 0.55);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.photo-item:hover .photo-label { opacity: 1; }
+
+/* Spanning classes for masonry feel */
+.big  { grid-column: span 2; grid-row: span 2; }
+.wide { grid-column: span 2; }
+/* Tablet — 3 columns, remove spanning */
+@media (max-width: 1024px) {
+  .photo-grid { grid-template-columns: repeat(3, 1fr); }
+  .big, .wide { grid-column: span 1; grid-row: span 1; }
+}
+/* Mobile — 2 columns */
+@media (max-width: 600px) {
+  .photo-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 140px; }
+}
