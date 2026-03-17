@@ -80,6 +80,7 @@
   .fdrop-menu { position: static; }
   .sidebar-wrap { flex-direction: column; }
 }
+
 /* Row of cards using flexbox with wrapping */
 .card-row {
   display: flex;
@@ -128,6 +129,7 @@
 @media (max-width: 600px) {
   .fx-card { flex: 1 1 100%; }
 }
+
 /* Shared holy grail pieces */
 .hg-demo    { border: 2px solid #ccc; border-radius: 8px; overflow: hidden; margin-bottom: 30px; }
 .hg-header  { background: navy;    color: white; padding: 14px; text-align: center; font-weight: bold; }
@@ -169,3 +171,25 @@
   }
 }
 
+/* Form card styles */
+.form-card { max-width: 700px; margin: 24px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.form-card h2 { margin-bottom: 20px; }
+
+/* Row of form fields using flexbox */
+.form-row { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }
+.form-group { flex: 1 1 200px; display: flex; flex-direction: column; }
+.form-group.full { flex: 1 1 100%; }
+
+label { font-weight: bold; font-size: 14px; margin-bottom: 4px; color: #333; }
+input[type='text'], input[type='email'], select {
+  padding: 10px 12px; border: 1.5px solid #ccc;
+  border-radius: 6px; font-size: 15px;
+  transition: border-color 0.3s;
+}
+input:focus, select:focus { outline: none; border-color: navy; box-shadow: 0 0 0 3px rgba(0,0,128,0.1); }
+input.error   { border-color: crimson; }
+input.success { border-color: seagreen; }
+.submit-btn { width: 100%; margin-top: 10px; padding: 12px; font-size: 16px; }
+
+/* Mobile — each field takes full width naturally via flex-wrap */
+@media (max-width: 500px) { .form-group { flex: 1 1 100%; } }

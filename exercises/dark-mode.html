@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Demo</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/media-queries.css">
+</head>
+
+<body class="dm-body">
+
+  <!-- NAV -->
+  <nav class="dm-nav">
+    <a href="../../index.html">Home</a>
+    <a href="#">Dark Mode Demo</a>
+
+    <!-- Toggle -->
+    <button id="themeToggle" class="dm-btn">Toggle Theme</button>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="dm-container">
+    <h1>Dark Mode & Preference Queries</h1>
+
+    <p>
+      This page detects your system theme automatically.
+      You can also override it using the toggle button.
+    </p>
+
+    <div class="dm-card">
+      <h3>prefers-color-scheme</h3>
+      <p>
+        Detects whether the user has set their OS to light or dark mode.
+        Used here to switch background and text colours.
+      </p>
+    </div>
+
+    <div class="dm-card">
+      <h3>prefers-reduced-motion</h3>
+      <p>
+        When enabled, all animations and transitions are disabled
+        for better accessibility.
+      </p>
+    </div>
+
+    <button class="dm-btn">
+      Hover Me — animation stops if reduced-motion is on
+    </button>
+  </div>
+
+  <!-- JS (kept in HTML for simplicity) -->
+  <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    const root = document.documentElement;
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme == "dark") {
+      root.classList.add("dark-mode");
+    } else if (savedTheme == "light") {
+      root.classList.add("light-mode");
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      // Determine what the current effectively applied theme is
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const isDark = root.classList.contains("dark-mode") || (prefersDark && !root.classList.contains("light-mode"));
+
+      if (isDark) {
+        // Switch to light
+        root.classList.remove("dark-mode");
+        root.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+      } else {
+        // Switch to dark
+        root.classList.remove("light-mode");
+        root.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+  </script>
+
+</body>
+</html>

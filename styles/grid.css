@@ -198,3 +198,59 @@
 @media (max-width: 480px) {
   .stat-card { flex: 1 1 100%; }
 }
+/* Desktop — asymmetric: featured article gets 2fr, others 1fr each */
+.mag-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+.mag-article {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.mag-article img { width: 100%; height: 200px; object-fit: cover; }
+.mag-article h2, .mag-article h3, .mag-article p, .mag-article a { padding: 0 14px; display: block; }
+.mag-article h2 { margin: 12px 0 8px; font-size: 1.3rem; }
+.mag-article h3 { margin: 12px 0 8px; }
+.mag-article p  { font-size: 14px; color: #555; margin-bottom: 10px; }
+.mag-article a  { color: navy; font-weight: bold; margin-bottom: 14px; text-decoration: none; }
+/* Featured article spans full height of first two rows */
+.featured { grid-row: span 2; }
+.featured img { height: 100%; max-height: 440px; }
+/* Tablet — symmetric two columns */
+@media (max-width: 1024px) {
+  .mag-grid { grid-template-columns: repeat(2, 1fr); }
+  .featured { grid-row: span 1; }
+  .featured img { height: 200px; max-height: 200px; }
+}
+/* Mobile — single column */
+@media (max-width: 600px) {
+  .mag-grid { grid-template-columns: 1fr; }
+}
+/* Overall layout — bio column left, projects right */
+.port-layout { display: grid; grid-template-columns: 260px 1fr; gap: 24px; padding: 24px; }
+/* Sticky bio — stays in view while projects scroll */
+.port-bio    { position: sticky; top: 20px; align-self: start; }
+.bio-card    { background: white; padding: 24px; border-radius: 10px; text-align: center; box-shadow: 0 3px 12px rgba(0,0,0,0.08); }
+.bio-photo   { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid navy; margin-bottom: 12px; }
+.bio-card h2 { margin-bottom: 8px; }
+.bio-card p  { font-size: 14px; color: #555; margin-bottom: 4px; }
+.bio-card .btn { display: block; margin-top: 14px; text-align: center; text-decoration: none; padding: 10px; }
+.port-projects h1 { margin-bottom: 16px; }
+/* Project cards row using flexbox */
+.proj-row  { display: flex; flex-wrap: wrap; gap: 20px; }
+.proj-card { flex: 1 1 calc(33% - 20px); background: white; border-radius: 10px; overflow: hidden; border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0,0,0,0.07); position: relative; }
+.proj-card img { width: 100%; height: 160px; object-fit: cover; }
+/* Absolutely positioned technology badge */
+.proj-badge { position: absolute; top: 10px; right: 10px; background: navy; color: white; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+.proj-info  { padding: 14px; }
+.proj-info h3 { margin-bottom: 6px; }
+.proj-info p  { font-size: 14px; color: #555; }
+@media (max-width: 1024px) { .proj-card { flex: 1 1 calc(50% - 20px); } }
+@media (max-width: 768px)  { .port-layout { grid-template-columns: 1fr; } .port-bio { position: static; } }
+@media (max-width: 600px)  { .proj-card { flex: 1 1 100%; } }
+
