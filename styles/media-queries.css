@@ -140,3 +140,71 @@
 @media (min-width: 1400px) {
   .bp-indicator { background: navy; }
   .bp-indicator::after { content: 'XXL — Large Desktop'; }}
+/* ── Light mode (default) ── */
+.dm-body { background-color: #f7f7f7; color: #111; }
+
+.dm-nav {
+  background: navy;
+  padding: 0 20px;
+  display: flex;
+  gap: 4px;
+}
+.dm-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 13px 16px;
+  display: block;
+}
+.dm-nav a:hover { background: steelblue; }
+
+.dm-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.dm-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 16px;
+  border-left: 4px solid navy;
+}
+.dm-card h3 { color: navy; margin-bottom: 6px; }
+
+.dm-btn {
+  background: navy;
+  color: white;
+  border: none;
+  padding: 11px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.dm-btn:hover { transform: scale(1.06); background: steelblue; }
+
+/* ── Dark mode ── */
+@media (prefers-color-scheme: dark) {
+  html:not(.light-mode) .dm-body { background-color: #121212; color: #e0e0e0; }
+  html:not(.light-mode) .dm-card { background: #1e1e1e; border-color: #333; border-left-color: steelblue; }
+  html:not(.light-mode) .dm-card h3 { color: #90caf9; }
+  html:not(.light-mode) .dm-btn  { background: steelblue; }
+}
+
+html.dark-mode .dm-body { background-color: #121212; color: #e0e0e0; }
+html.dark-mode .dm-card { background: #1e1e1e; border-color: #333; border-left-color: steelblue; }
+html.dark-mode .dm  -card h3 { color: #90caf9; }
+html.dark-mode .dm-btn  { background: steelblue; }
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* ── Print ── */
+@media print {
+  .dm-nav { display: none; }
+  .dm-body { background: white; color: black; }
+  .dm-btn  { display: none; }
+}
