@@ -1,66 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Schedule</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+  </head>
+  <body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="../exercises/selectors.html">Selectors</a>
+          <a href="../exercises/typography.html">Typography</a>
+          <a href="../exercises/backgrounds.html">Backgrounds</a>
+          <a href="../exercises/images.html">Images</a>
+          <a href="../exercises/cards.html">Cards</a>
+          <a href="../exercises/transforms.html">Transforms</a>
+          <a href="../exercises/dark-mode.html">Dark Mode</a>
+          <a href="../exercises/advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="../layouts/display-exercises.html">Display</a>
+          <a href="../layouts/flexbox-exercises.html">Flexbox</a>
+          <a href="../layouts/grid-exercises.html">Grid</a>
+          <a href="../layouts/position-exercises.html">Position</a>
+          <a href="../layouts/holy-grail-comparison.html">Holy Grail</a>
+          <a href="../layouts/landing-page.html">Landing Page</a>
+          <a href="../layouts/dashboard-grid.html">Dashboard</a>
+          <a href="../layouts/responsive-demo.html">Responsive Demo</a>
+          <a href="../layouts/responsive-table.html">Responsive Table</a>
+          <a href="../layouts/magazine-float.html">Magazine Float</a>
+          <a href="../layouts/magazine-grid.html">Magazine Grid</a>
+          <a href="../layouts/portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Schedule</title>
-    <link rel="stylesheet" href="../styles/components.css">
-</head>
+    <div class="container">
+      <h1>Course Schedule</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00–9:00</td>
+            <td>Calculus</td>
+            <td>Programming</td>
+            <td>Islamic Studies</td>
+            <td>Web Technologies</td>
+            <td>Applied Physics</td>
+          </tr>
+          <tr>
+            <td>9:00–10:00</td>
+            <td>Calculus</td>
+            <td>Programming</td>
+            <td>Islamic Studies</td>
+            <td>Web Technologies</td>
+            <td>Applied Physics</td>
+          </tr>
+          <tr class="lunch-row">
+            <td>11:00–12:00</td>
+            <td colspan="5">Lunch Break</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<body>
-
-<nav>
-    <a href="profile.html">Profile</a> <br>
-    <a href="schedule.html">Schedule</a> <br>
-    <a href="navigation.html">Navigation</a> <br>
-    <a href="registration.html">Registration</a><br><br>
-</nav>
-
-<table border="1" cellpadding="10">
-
-<thead>
-<tr>
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-    <td>8:00-9:00</td>
-    <td>Calculus</td>
-    <td>Programming</td>
-    <td>Islamic Studies</td>
-    <td>Web Technologies</td>
-    <td>Applied Physics</td>
-</tr>
-
-<tr>
-    <td>9:00-10:00</td>
-    <td>Calculus</td>
-    <td>Programming</td>
-    <td>Islamic Studies</td>
-    <td>Web Technologies</td>
-    <td>Applied Physics</td>
-</tr>
-
-<!-- Lunch row -->
-<tr class="lunch-row">
-    <td>11:00-12:00</td>
-    <td colspan="5">Lunch Break</td>
-</tr>
-
-</tbody>
-
-</table>
-
-<br><br>
-<a href="../index.html">Home</a>
-
-</body>
+    <footer>
+      CS 224L Web Technologies | UET Peshawar | Abdul Majid | 24PWBCS1258
+    </footer>
+  </body>
 </html>

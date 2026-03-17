@@ -1,48 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Typography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&family=Fira+Code&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/typography.css">
-</head>
-<body>
-  <nav>
-    <a href="../../index.html">Home</a>
-    <a href="../../lab02/profile.html">Profile</a>
-    <a href="../../lab02/schedule.html">Schedule</a>
-  </nav>
-  <div class="container">
-    <h1>Typography Showcase</h1>
-    <h2>Google Fonts</h2>
-    <p class="font-roboto">This is Roboto. Clean and easy to read.</p>
-    <p class="font-playfair">This is Playfair Display. Looks like a newspaper heading.</p>
-    <p class="font-fira">This is Fira Code. Used for code and monospace text.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Typography</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/typography.css" />
+  </head>
+  <body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="../Lab_02/profile.html">Profile</a>
+      <a href="../Lab_02/schedule.html">Schedule</a>
+      <a href="../Lab_02/registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="selectors.html">Selectors</a>
+          <a href="typography.html">Typography</a>
+          <a href="backgrounds.html">Backgrounds</a>
+          <a href="images.html">Images</a>
+          <a href="cards.html">Cards</a>
+          <a href="transforms.html">Transforms</a>
+          <a href="dark-mode.html">Dark Mode</a>
+          <a href="advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="../layouts/display-exercises.html">Display</a>
+          <a href="../layouts/flexbox-exercises.html">Flexbox</a>
+          <a href="../layouts/grid-exercises.html">Grid</a>
+          <a href="../layouts/position-exercises.html">Position</a>
+          <a href="../layouts/holy-grail-comparison.html">Holy Grail</a>
+          <a href="../layouts/landing-page.html">Landing Page</a>
+          <a href="../layouts/dashboard-grid.html">Dashboard</a>
+          <a href="../layouts/responsive-demo.html">Responsive Demo</a>
+          <a href="../layouts/responsive-table.html">Responsive Table</a>
+          <a href="../layouts/magazine-float.html">Magazine Float</a>
+          <a href="../layouts/magazine-grid.html">Magazine Grid</a>
+          <a href="../layouts/portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Typography Showcase</h1>
+      <h2>Google Fonts</h2>
+      <p class="font-roboto">This is Roboto. Clean and easy to read.</p>
+      <p class="font-playfair">
+        This is Playfair Display. Looks like a newspaper heading.
+      </p>
+      <p class="font-fira">
+        This is Fira Code. Used for code and monospace text.
+      </p>
 
-    <h2>Font Sizes</h2>
-    <p class="size-px">18px — fixed pixel size</p>
-    <p class="size-em">1.5em — relative to parent element</p>
-    <p class="size-rem">1.2rem — relative to root html</p>
-    <p class="size-pct">120% — percentage of parent</p>
+      <h2>Font Sizes</h2>
+      <p class="size-px">18px — fixed pixel size</p>
+      <p class="size-em">1.5em — relative to parent element</p>
+      <p class="size-rem">1.2rem — relative to root html</p>
+      <p class="size-pct">120% — percentage of parent</p>
 
-    <h2>Text Alignment</h2>
-    <p class="align-left">Left aligned text (default)</p>
-    <p class="align-center">Center aligned text</p>
-    <p class="align-right">Right aligned text</p>
-    <p class="align-justify">Justified text. This paragraph has enough words to show how justified alignment stretches the text to fill the full width of the container on both sides evenly.</p>
+      <h2>Text Alignment</h2>
+      <p class="align-left">Left aligned text (default)</p>
+      <p class="align-center">Center aligned text</p>
+      <p class="align-right">Right aligned text</p>
+      <p class="align-justify">
+        Justified text. This paragraph has enough words to show how justified
+        alignment stretches the text to fill the full width of the container on
+        both sides evenly.
+      </p>
 
-    <h2>Decoration and Transform</h2>
-    <p class="underline">Underlined text</p>
-    <p class="strikethrough">Strikethrough text</p>
-    <p class="upper">uppercase text transform</p>
-    <p class="lower">LOWERCASE TEXT TRANSFORM</p>
-    <p class="capitalize">capitalize each word transform</p>
+      <h2>Decoration and Transform</h2>
+      <p class="underline">Underlined text</p>
+      <p class="strikethrough">Strikethrough text</p>
+      <p class="upper">uppercase text transform</p>
+      <p class="lower">LOWERCASE TEXT TRANSFORM</p>
+      <p class="capitalize">capitalize each word transform</p>
 
-    <h2>Text Shadow</h2>
-    <p class="shadow-soft">Soft drop shadow</p>
-    <p class="shadow-glow">Blue glow shadow effect</p>
-
-  </div>
-</body>
+      <h2>Text Shadow</h2>
+      <p class="shadow-soft">Soft drop shadow</p>
+      <p class="shadow-glow">Blue glow shadow effect</p>
+    </div>
+  </body>
 </html>

@@ -1,41 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Transforms</title>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/effects.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Transforms</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/effects.css" />
+  </head>
+  <body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="../Lab_02/profile.html">Profile</a>
+      <a href="../Lab_02/schedule.html">Schedule</a>
+      <a href="../Lab_02/registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="selectors.html">Selectors</a>
+          <a href="typography.html">Typography</a>
+          <a href="backgrounds.html">Backgrounds</a>
+          <a href="images.html">Images</a>
+          <a href="cards.html">Cards</a>
+          <a href="transforms.html">Transforms</a>
+          <a href="dark-mode.html">Dark Mode</a>
+          <a href="advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="../layouts/display-exercises.html">Display</a>
+          <a href="../layouts/flexbox-exercises.html">Flexbox</a>
+          <a href="../layouts/grid-exercises.html">Grid</a>
+          <a href="../layouts/position-exercises.html">Position</a>
+          <a href="../layouts/holy-grail-comparison.html">Holy Grail</a>
+          <a href="../layouts/landing-page.html">Landing Page</a>
+          <a href="../layouts/dashboard-grid.html">Dashboard</a>
+          <a href="../layouts/responsive-demo.html">Responsive Demo</a>
+          <a href="../layouts/responsive-table.html">Responsive Table</a>
+          <a href="../layouts/magazine-float.html">Magazine Float</a>
+          <a href="../layouts/magazine-grid.html">Magazine Grid</a>
+          <a href="../layouts/portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
 
-  <nav>
-    <a href="../../index.html">Home</a>
-  </nav>
+    <div class="container">
+      <h1>CSS Transform Gallery</h1>
 
-  <div class="container">
-    <h1>CSS Transform Gallery</h1>
+      <h2>2D Transforms — hover each box</h2>
+      <div class="t-row">
+        <div class="t-box t-rotate">Rotate</div>
+        <div class="t-box t-scale">Scale</div>
+        <div class="t-box t-translate">Translate</div>
+        <div class="t-box t-skew">Skew</div>
+        <div class="t-box t-combined">Combined</div>
+      </div>
 
-    <h2>2D Transforms — hover each box</h2>
-    <div class="t-row">
-      <div class="t-box t-rotate">Rotate</div>
-      <div class="t-box t-scale">Scale</div>
-      <div class="t-box t-translate">Translate</div>
-      <div class="t-box t-skew">Skew</div>
-      <div class="t-box t-combined">Combined</div>
+      <h2>3D Flip</h2>
+      <div class="t-row">
+        <div class="t-box t-flip">3D Flip</div>
+      </div>
+
+      <h2>Transform Origin Demo</h2>
+      <div class="t-row">
+        <div class="t-box origin-center">Center</div>
+        <div class="t-box origin-top">Top Left</div>
+        <div class="t-box origin-bottom">Bottom Right</div>
+      </div>
     </div>
-
-    <h2>3D Flip</h2>
-    <div class="t-row">
-      <div class="t-box t-flip">3D Flip</div>
-    </div>
-
-    <h2>Transform Origin Demo</h2>
-    <div class="t-row">
-      <div class="t-box origin-center">Center</div>
-      <div class="t-box origin-top">Top Left</div>
-      <div class="t-box origin-bottom">Bottom Right</div>
-    </div>
-
-  </div>
-</body>
+  </body>
 </html>

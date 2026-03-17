@@ -1,19 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Magazine Float Layout</title>
-  <link rel="stylesheet" href="../styles/base.css">
-  <link rel="stylesheet" href="../styles/float.css">
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/float.css" />
 </head>
+
 <body>
-  <nav><a href="../../index.html">Home</a></nav>
+  <nav class="global-nav">
+    <a href="../index.html">Home</a>
+    <a href="../Lab_02/profile.html">Profile</a>
+    <a href="../Lab_02/schedule.html">Schedule</a>
+    <a href="../Lab_02/registration.html">Register</a>
+    <div class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+      <div class="dropdown-content">
+        <a href="../exercises/selectors.html">Selectors</a>
+        <a href="../exercises/typography.html">Typography</a>
+        <a href="../exercises/backgrounds.html">Backgrounds</a>
+        <a href="../exercises/images.html">Images</a>
+        <a href="../exercises/cards.html">Cards</a>
+        <a href="../exercises/transforms.html">Transforms</a>
+        <a href="../exercises/dark-mode.html">Dark Mode</a>
+        <a href="../exercises/advanced.html">Advanced</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+      <div class="dropdown-content">
+        <a href="display-exercises.html">Display</a>
+        <a href="flexbox-exercises.html">Flexbox</a>
+        <a href="grid-exercises.html">Grid</a>
+        <a href="position-exercises.html">Position</a>
+        <a href="holy-grail-comparison.html">Holy Grail</a>
+        <a href="landing-page.html">Landing Page</a>
+        <a href="dashboard-grid.html">Dashboard</a>
+        <a href="responsive-demo.html">Responsive Demo</a>
+        <a href="responsive-table.html">Responsive Table</a>
+        <a href="magazine-float.html">Magazine Float</a>
+        <a href="magazine-grid.html">Magazine Grid</a>
+        <a href="portfolio-mixed.html">Portfolio</a>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <h1>Magazine Layout Using Floats</h1>
 
     <div class="mag-wrapper clearfix">
-
       <aside class="mag-sidebar">
         <h3>Latest News</h3>
         <p>Story about web development trends this year.</p>
@@ -24,18 +60,33 @@
       <main class="mag-main">
         <h2>Web Technologies — UET Peshawar</h2>
 
-        <img src="https://picsum.photos/200/140?10" alt="Article image" class="float-left">
-        <p>This is the main article content. The image is floated left so the text wraps around it on the right side. This is exactly how magazine and newspaper layouts work. The text continues to flow beside the image and then goes below it once it passes the image height.</p>
-        <p>A second paragraph continues here. The clearfix on the parent prevents the layout from collapsing when all children are floated.</p>
+        <img src="https://picsum.photos/200/140?10" alt="Article image" class="float-left" />
+        <p>
+          This is the main article content. The image is floated left so the
+          text wraps around it on the right side. This is exactly how magazine
+          and newspaper layouts work. The text continues to flow beside the
+          image and then goes below it once it passes the image height.
+        </p>
+        <p>
+          A second paragraph continues here. The clearfix on the parent
+          prevents the layout from collapsing when all children are floated.
+        </p>
         <div class="clearfix"></div>
 
-        <img src="https://picsum.photos/200/140?11" alt="Article image 2" class="float-right">
-        <p>This section has an image floated to the right instead. The text now wraps on the left side of the image. Both float directions work the same way — just mirrored.</p>
-        <p>More content to show the text wrapping properly around the right-floated image.</p>
+        <img src="https://picsum.photos/200/140?11" alt="Article image 2" class="float-right" />
+        <p>
+          This section has an image floated to the right instead. The text now
+          wraps on the left side of the image. Both float directions work the
+          same way — just mirrored.
+        </p>
+        <p>
+          More content to show the text wrapping properly around the
+          right-floated image.
+        </p>
         <div class="clearfix"></div>
       </main>
-
     </div>
   </div>
 </body>
+
 </html>

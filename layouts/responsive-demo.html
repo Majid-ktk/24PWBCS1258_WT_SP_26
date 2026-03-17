@@ -1,35 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media Query Demo</title>
-  <link rel="stylesheet" href="../styles/base.css">
-  <link rel="stylesheet" href="../styles/media-queries.css">
-</head>
-<body>
-
-  <div class="bp-bar">
-    <span class="bp-m">MOBILE  —  under 600px</span>
-    <span class="bp-t">TABLET  —  600px to 1023px</span>
-    <span class="bp-d">DESKTOP  —  1024px and above</span>
-  </div>
-
-  <nav><a href="../../index.html">Home</a></nav>
-
-  <div class="container">
-    <h1 class="rsp-h1">Responsive Typography</h1>
-    <p class="rsp-p">This text scales at each breakpoint. Watch the font size change as you resize the browser window wider or narrower.</p>
-
-    <h2>Layout Boxes — watch how they rearrange</h2>
-    <div class="bp-grid">
-      <div class="bp-box">Box 1</div>
-      <div class="bp-box">Box 2</div>
-      <div class="bp-box">Box 3</div>
-      <div class="bp-box">Box 4</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query Demo</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/media-queries.css" />
+  </head>
+  <body>
+    <div class="bp-bar">
+      <span class="bp-m">MOBILE — under 600px</span>
+      <span class="bp-t">TABLET — 600px to 1023px</span>
+      <span class="bp-d">DESKTOP — 1024px and above</span>
     </div>
-  </div>
 
-</body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="../Lab_02/profile.html">Profile</a>
+      <a href="../Lab_02/schedule.html">Schedule</a>
+      <a href="../Lab_02/registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="../exercises/selectors.html">Selectors</a>
+          <a href="../exercises/typography.html">Typography</a>
+          <a href="../exercises/backgrounds.html">Backgrounds</a>
+          <a href="../exercises/images.html">Images</a>
+          <a href="../exercises/cards.html">Cards</a>
+          <a href="../exercises/transforms.html">Transforms</a>
+          <a href="../exercises/dark-mode.html">Dark Mode</a>
+          <a href="../exercises/advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="display-exercises.html">Display</a>
+          <a href="flexbox-exercises.html">Flexbox</a>
+          <a href="grid-exercises.html">Grid</a>
+          <a href="position-exercises.html">Position</a>
+          <a href="holy-grail-comparison.html">Holy Grail</a>
+          <a href="landing-page.html">Landing Page</a>
+          <a href="dashboard-grid.html">Dashboard</a>
+          <a href="responsive-demo.html">Responsive Demo</a>
+          <a href="responsive-table.html">Responsive Table</a>
+          <a href="magazine-float.html">Magazine Float</a>
+          <a href="magazine-grid.html">Magazine Grid</a>
+          <a href="portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="rsp-h1">Responsive Typography</h1>
+      <p class="rsp-p">
+        This text scales at each breakpoint. Watch the font size change as you
+        resize the browser window wider or narrower.
+      </p>
+
+      <h2>Layout Boxes — watch how they rearrange</h2>
+      <div class="bp-grid">
+        <div class="bp-box">Box 1</div>
+        <div class="bp-box">Box 2</div>
+        <div class="bp-box">Box 3</div>
+        <div class="bp-box">Box 4</div>
+      </div>
+    </div>
+  </body>
 </html>
-

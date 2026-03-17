@@ -1,28 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox Navigation</title>
-  <link rel="stylesheet" href="../styles/base.css">
-  <link rel="stylesheet" href="../styles/flexbox.css">
-</head>
-<body>
-
-  <header class="flex-header">
-    <div class="logo">Abdul Majid</div>
-    <button class="hamburger" onclick="toggleNav()">&#9776;</button>
-    <nav class="flex-nav" id="flex-nav">
-      <a href="../../index.html">Home</a>
-      <a href="../../lab02/profile.html">Profile</a>
-      <a href="../../lab02/schedule.html">Schedule</a>
-      <div class="fdrop">
-        <a href="#">Labs &#9660;</a>
-        <div class="fdrop-menu">
-          <a href="../../lab02/registration.html">Registration</a>
-          <a href="../../lab03-css/exercises/selectors.html">Selectors</a>
-          <a href="../../lab03-css/exercises/typography.html">Typography</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Navigation</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/flexbox.css" />
+  </head>
+  <body>
+    <header class="flex-header">
+      <div class="logo">Abdul Majid</div>
+      <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+      <nav class="flex-nav global-nav" id="flex-nav">
+        <a href="../index.html">Home</a>
+        <a href="../Lab_02/profile.html">Profile</a>
+        <a href="../Lab_02/schedule.html">Schedule</a>
+        <a href="../Lab_02/registration.html">Register</a>
+        <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+          <div class="dropdown-content">
+            <a href="../exercises/selectors.html">Selectors</a>
+            <a href="../exercises/typography.html">Typography</a>
+            <a href="../exercises/backgrounds.html">Backgrounds</a>
+            <a href="../exercises/images.html">Images</a>
+            <a href="../exercises/cards.html">Cards</a>
+            <a href="../exercises/transforms.html">Transforms</a>
+            <a href="../exercises/dark-mode.html">Dark Mode</a>
+            <a href="../exercises/advanced.html">Advanced</a>
+          </div>
         </div>
+        <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+          <div class="dropdown-content">
+            <a href="display-exercises.html">Display</a>
+            <a href="flexbox-exercises.html">Flexbox</a>
+            <a href="grid-exercises.html">Grid</a>
+            <a href="position-exercises.html">Position</a>
+            <a href="holy-grail-comparison.html">Holy Grail</a>
+            <a href="landing-page.html">Landing Page</a>
+            <a href="dashboard-grid.html">Dashboard</a>
+            <a href="responsive-demo.html">Responsive Demo</a>
+            <a href="responsive-table.html">Responsive Table</a>
+            <a href="magazine-float.html">Magazine Float</a>
+            <a href="magazine-grid.html">Magazine Grid</a>
+            <a href="portfolio-mixed.html">Portfolio</a>
+          </div>
+        </div>
+<<<<<<< HEAD
       </div>
       <a href="https://github.com/majid-ktk" target="_blank">GitHub</a>
     </nav>
@@ -39,57 +63,82 @@
         <a href="../Lab_02/profile.html">Profile</a>
         <a href="../Lab_02/schedule.html">Schedule</a>
         <a href="#">Settings</a>
+=======
+>>>>>>> 4fbe3fa (Lab 05-06 all 18 tasks complete - layout and responsive design)
       </nav>
-      <div class="sidebar-content">
-        <p>Main content sits next to the sidebar on desktop and moves below it on mobile.</p>
-      </div>
-    </div>
+    </header>
 
-    <!-- Responsive Equal-Height Card Layout -->
-    <h2>Responsive Equal-Height Card Layout</h2>
-    <p>Cards stay equal height even when content differs. Button always sits at the bottom.</p>
+    <div class="container">
+      <h1>Flexbox Navigation System</h1>
+      <p>
+        On mobile the links collapse into a hamburger button. Click it to toggle
+        the menu.
+      </p>
 
-    <div class="card-row">
-
-      <div class="fx-card">
-        <img src="https://picsum.photos/300/160?20" alt="Web Dev">
-        <div class="fx-card-body">
-          <h3>Web Development</h3>
+      <h2>Vertical Sidebar Navigation</h2>
+      <div class="sidebar-wrap">
+        <nav class="sidebar-nav">
+          <a href="../layouts/dashboard-grid.html">Dashboard</a>
+          <a href="../Lab_02/profile.html">Profile</a>
+          <a href="../Lab_02/schedule.html">Schedule</a>
+          <a href="#">Settings</a>
+        </nav>
+        <div class="sidebar-content">
           <p>
-            Learn HTML, CSS and JavaScript from the very beginning. This card has more
-            text to demonstrate that all cards stay the same height regardless of content.
+            Main content sits next to the sidebar on desktop and moves below it
+            on mobile.
           </p>
-          <button class="btn">Enroll Now</button>
         </div>
       </div>
 
-      <div class="fx-card">
-        <img src="https://picsum.photos/300/160?21" alt="Python">
-        <div class="fx-card-body">
-          <h3>Python</h3>
-          <p>Start programming with Python from scratch.</p>
-          <button class="btn">Enroll Now</button>
+      <!-- Responsive Equal-Height Card Layout -->
+      <h2>Responsive Equal-Height Card Layout</h2>
+      <p>
+        Cards stay equal height even when content differs. Button always sits at
+        the bottom.
+      </p>
+
+      <div class="card-row">
+        <div class="fx-card">
+          <img src="https://picsum.photos/300/160?20" alt="Web Dev" />
+          <div class="fx-card-body">
+            <h3>Web Development</h3>
+            <p>
+              Learn HTML, CSS and JavaScript from the very beginning. This card
+              has more text to demonstrate that all cards stay the same height
+              regardless of content.
+            </p>
+            <button class="btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <div class="fx-card">
+          <img src="https://picsum.photos/300/160?21" alt="Python" />
+          <div class="fx-card-body">
+            <h3>Python</h3>
+            <p>Start programming with Python from scratch.</p>
+            <button class="btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <div class="fx-card">
+          <img src="https://picsum.photos/300/160?22" alt="Database" />
+          <div class="fx-card-body">
+            <h3>Database Systems</h3>
+            <p>
+              Understand SQL and relational database design properly from
+              fundamentals.
+            </p>
+            <button class="btn">Enroll Now</button>
+          </div>
         </div>
       </div>
-
-      <div class="fx-card">
-        <img src="https://picsum.photos/300/160?22" alt="Database">
-        <div class="fx-card-body">
-          <h3>Database Systems</h3>
-          <p>Understand SQL and relational database design properly from fundamentals.</p>
-          <button class="btn">Enroll Now</button>
-        </div>
-      </div>
-
     </div>
 
-  </div>
-
-  <script>
-    function toggleNav() {
-      document.getElementById('flex-nav').classList.toggle('open');
-    }
-  </script>
-
-</body>
+    <script>
+      function toggleNav() {
+        document.getElementById("flex-nav").classList.toggle("open");
+      }
+    </script>
+  </body>
 </html>

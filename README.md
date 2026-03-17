@@ -4,15 +4,11 @@
 **Registration No:** 24PWBCS1258  
 **University:** University of Engineering & Technology, Peshawar  
 **Semester:** Spring 2026  
-**Instructor:** Mr. Mohammad  
-
-
+**Instructor:** Mr. Mohammad
 
 ## 🌐 Live Website
 
 👉 https://majid-ktk.github.io/24PWBCS1258_WT_SP_26/
-
-
 
 ## 📁 Folder Structure
 
@@ -21,18 +17,16 @@ web-tech-labs/
 ├── 404.html
 ├── README.md
 ├── lab01/
-│   └── index.html
+│ └── index.html
 ├── lab02/
-│   ├── profile.html
-│   ├── schedule.html
-│   ├── navigation.html
-│   └── registration.html
+│ ├── profile.html
+│ ├── schedule.html
+│ ├── navigation.html
+│ └── registration.html
 └── assets/
-    ├── css/
-    ├── js/
-    └── images/
-
-
+├── css/
+├── js/
+└── images/
 
 ## 📚 Labs Completed
 

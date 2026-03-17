@@ -19,17 +19,35 @@
   transition: transform 0.4s ease;
 }
 
-.t-rotate:hover    { transform: rotate(45deg); }
-.t-scale:hover     { transform: scale(1.4); }
-.t-translate:hover { transform: translate(30px, -20px); }
-.t-skew:hover      { transform: skew(20deg, 5deg); }
-.t-combined:hover  { transform: rotate(15deg) scale(1.2) translateX(10px); }
+.t-rotate:hover {
+  transform: rotate(45deg);
+}
+.t-scale:hover {
+  transform: scale(1.4);
+}
+.t-translate:hover {
+  transform: translate(30px, -20px);
+}
+.t-skew:hover {
+  transform: skew(20deg, 5deg);
+}
+.t-combined:hover {
+  transform: rotate(15deg) scale(1.2) translateX(10px);
+}
 
-.t-flip:hover { transform: rotateY(180deg); }
+.t-flip:hover {
+  transform: rotateY(180deg);
+}
 
-.origin-center { transform-origin: center; }
-.origin-top    { transform-origin: top left; }
-.origin-bottom { transform-origin: bottom right; }
+.origin-center {
+  transform-origin: center;
+}
+.origin-top {
+  transform-origin: top left;
+}
+.origin-bottom {
+  transform-origin: bottom right;
+}
 
 .origin-center:hover,
 .origin-top:hover,
@@ -52,7 +70,7 @@
   margin: 8px 0;
 }
 
-.custom-check input[type='checkbox'] {
+.custom-check input[type="checkbox"] {
   width: 18px;
   height: 18px;
   accent-color: navy;
@@ -67,7 +85,7 @@
   margin-right: 16px;
 }
 
-.custom-radio input[type='radio'] {
+.custom-radio input[type="radio"] {
   width: 18px;
   height: 18px;
   accent-color: navy;
@@ -85,11 +103,13 @@
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .clip-text {
-  background-image: url('../images/backgrounds/hero.jpg');
+  background-image: url("../images/backgrounds/hero.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;

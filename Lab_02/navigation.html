@@ -1,32 +1,100 @@
-<nav>
-  <a href="../index.html">Home</a> <br>
-  <a href="profile.html">Profile</a> <br>
-  <a href="schedule.html">Schedule</a> <br>
-  <a href="navigation.html">Navigation</a> <br>
-  <a href="registration.html">Registration</a>
-</nav>
-<br>
-<nav>
-    <a href="../index.html">Home</a><br>
-    <a href="#about">About</a><br>
-    <a href="#courses">Courses</a><br>
-    <a href="#contact">Contact</a><br>
-    <a href="https://www.uetpeshawar.edu.pk" target="_blank" rel="noopener noreferrer">UET Peshawar</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Demo</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+  </head>
+  <body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="../exercises/selectors.html">Selectors</a>
+          <a href="../exercises/typography.html">Typography</a>
+          <a href="../exercises/backgrounds.html">Backgrounds</a>
+          <a href="../exercises/images.html">Images</a>
+          <a href="../exercises/cards.html">Cards</a>
+          <a href="../exercises/transforms.html">Transforms</a>
+          <a href="../exercises/dark-mode.html">Dark Mode</a>
+          <a href="../exercises/advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="../layouts/display-exercises.html">Display</a>
+          <a href="../layouts/flexbox-exercises.html">Flexbox</a>
+          <a href="../layouts/grid-exercises.html">Grid</a>
+          <a href="../layouts/position-exercises.html">Position</a>
+          <a href="../layouts/holy-grail-comparison.html">Holy Grail</a>
+          <a href="../layouts/landing-page.html">Landing Page</a>
+          <a href="../layouts/dashboard-grid.html">Dashboard</a>
+          <a href="../layouts/responsive-demo.html">Responsive Demo</a>
+          <a href="../layouts/responsive-table.html">Responsive Table</a>
+          <a href="../layouts/magazine-float.html">Magazine Float</a>
+          <a href="../layouts/magazine-grid.html">Magazine Grid</a>
+          <a href="../layouts/portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
 
-</nav>
-<section id="about">
-    <h2>About Us</h2>
-    <p>We are a leading educational institution committed to providing quality education and fostering innovation.</p>
-</section>
-<section id="courses">
-    <h2>Our Courses</h2>
-    <ul>
-        <li>Computer Science</li>
-        <li>Electrical Engineering</li>
-        <li>Mechanical Engineering</li>
-        <li>Civil Engineering</li>
-    </ul>
-    <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or inquiries, please feel free to reach out to us.</p>
-</section>
+    <div class="container">
+      <h1>Navigation Menu Demo</h1>
+      <p>
+        This page demonstrates different styles of navigation menus using only
+        HTML and CSS.
+      </p>
+
+      <!-- Demo: Anchor-link in-page nav -->
+      <h2>In-Page Anchor Navigation</h2>
+      <nav style="margin: 12px 0; display: flex; gap: 16px; flex-wrap: wrap">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+        <a
+          href="https://www.uetpeshawar.edu.pk"
+          target="_blank"
+          rel="noopener noreferrer"
+          >UET Peshawar ↗</a
+        >
+      </nav>
+
+      <section id="about" style="margin-top: 32px">
+        <h2>About Us</h2>
+        <p>
+          We are a leading educational institution committed to providing
+          quality education and fostering innovation.
+        </p>
+      </section>
+
+      <section id="courses" style="margin-top: 32px">
+        <h2>Our Courses</h2>
+        <ul>
+          <li>Computer Science</li>
+          <li>Electrical Engineering</li>
+          <li>Mechanical Engineering</li>
+          <li>Civil Engineering</li>
+        </ul>
+      </section>
+
+      <section id="contact" style="margin-top: 32px">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or inquiries, please feel free to reach out
+          to us.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      CS 224L Web Technologies | UET Peshawar | Abdul Majid | 24PWBCS1258
+    </footer>
+  </body>
+</html>

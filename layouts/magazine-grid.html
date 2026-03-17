@@ -1,55 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magazine Grid Layout</title>
-  <link rel="stylesheet" href="../styles/base.css">
-  <link rel="stylesheet" href="../styles/grid.css">
-  <link rel="stylesheet" href="../styles/media-queries.css">
-</head>
-<body>
-  <nav><a href="../../index.html">Home</a></nav>
-  <div class="container">
-    <h1>Responsive Magazine Layout</h1>
-    <div class="mag-grid">
-      <article class="mag-article featured">
-        <img src="https://picsum.photos/600/360?50" alt="Featured">
-        <h2>Featured Story — Web Technologies in 2026</h2>
-        <p>This is the featured article. It spans a wider column to show it is the main story on the page. The larger image and heading hierarchy draws the reader here first.</p>
-        <a href="#">Read More</a>
-      </article>
-      <article class="mag-article">
-        <img src="https://picsum.photos/300/200?51" alt="Story 2">
-        <h3>CSS Grid Changes Web Layouts</h3>
-        <p>Secondary article with a shorter description alongside the featured story.</p>
-        <a href="#">Read More</a>
-      </article>
-      <article class="mag-article">
-        <img src="https://picsum.photos/300/200?52" alt="Story 3">
-        <h3>Flexbox vs Grid — Which to Use</h3>
-        <p>Third article completing the top row of the magazine layout.</p>
-        <a href="#">Read More</a>
-      </article>
-      <article class="mag-article">
-        <img src="https://picsum.photos/300/200?53" alt="Story 4">
-        <h3>Responsive Design Tips</h3>
-        <p>Mobile-first approach explained with practical examples.</p>
-        <a href="#">Read More</a>
-      </article>
-      <article class="mag-article">
-        <img src="https://picsum.photos/300/200?54" alt="Story 5">
-        <h3>Media Queries Deep Dive</h3>
-        <p>Understanding breakpoints and when to use each one properly.</p>
-        <a href="#">Read More</a>
-      </article>
-      <article class="mag-article">
-        <img src="https://picsum.photos/300/200?55" alt="Story 6">
-        <h3>Modern CSS Features 2026</h3>
-        <p>The latest CSS properties and when to use them in production.</p>
-        <a href="#">Read More</a>
-      </article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine Grid Layout</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/grid.css" />
+    <link rel="stylesheet" href="../styles/media-queries.css" />
+  </head>
+  <body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="../Lab_02/profile.html">Profile</a>
+      <a href="../Lab_02/schedule.html">Schedule</a>
+      <a href="../Lab_02/registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="../exercises/selectors.html">Selectors</a>
+          <a href="../exercises/typography.html">Typography</a>
+          <a href="../exercises/backgrounds.html">Backgrounds</a>
+          <a href="../exercises/images.html">Images</a>
+          <a href="../exercises/cards.html">Cards</a>
+          <a href="../exercises/transforms.html">Transforms</a>
+          <a href="../exercises/dark-mode.html">Dark Mode</a>
+          <a href="../exercises/advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="display-exercises.html">Display</a>
+          <a href="flexbox-exercises.html">Flexbox</a>
+          <a href="grid-exercises.html">Grid</a>
+          <a href="position-exercises.html">Position</a>
+          <a href="holy-grail-comparison.html">Holy Grail</a>
+          <a href="landing-page.html">Landing Page</a>
+          <a href="dashboard-grid.html">Dashboard</a>
+          <a href="responsive-demo.html">Responsive Demo</a>
+          <a href="responsive-table.html">Responsive Table</a>
+          <a href="magazine-float.html">Magazine Float</a>
+          <a href="magazine-grid.html">Magazine Grid</a>
+          <a href="portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Responsive Magazine Layout</h1>
+      <div class="mag-grid">
+        <article class="mag-article featured">
+          <img src="https://picsum.photos/600/360?50" alt="Featured" />
+          <h2>Featured Story — Web Technologies in 2026</h2>
+          <p>
+            This is the featured article. It spans a wider column to show it is
+            the main story on the page. The larger image and heading hierarchy
+            draws the reader here first.
+          </p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="mag-article">
+          <img src="https://picsum.photos/300/200?51" alt="Story 2" />
+          <h3>CSS Grid Changes Web Layouts</h3>
+          <p>
+            Secondary article with a shorter description alongside the featured
+            story.
+          </p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="mag-article">
+          <img src="https://picsum.photos/300/200?52" alt="Story 3" />
+          <h3>Flexbox vs Grid — Which to Use</h3>
+          <p>Third article completing the top row of the magazine layout.</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="mag-article">
+          <img src="https://picsum.photos/300/200?53" alt="Story 4" />
+          <h3>Responsive Design Tips</h3>
+          <p>Mobile-first approach explained with practical examples.</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="mag-article">
+          <img src="https://picsum.photos/300/200?54" alt="Story 5" />
+          <h3>Media Queries Deep Dive</h3>
+          <p>Understanding breakpoints and when to use each one properly.</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="mag-article">
+          <img src="https://picsum.photos/300/200?55" alt="Story 6" />
+          <h3>Modern CSS Features 2026</h3>
+          <p>The latest CSS properties and when to use them in production.</p>
+          <a href="#">Read More</a>
+        </article>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

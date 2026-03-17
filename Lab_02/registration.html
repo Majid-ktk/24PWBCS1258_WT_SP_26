@@ -1,53 +1,125 @@
-<form
-  action="https://formspree.io/f/xjgezyro"
-  method="POST"
->
-<link rel="stylesheet" href="../styles/components.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+  </head>
+  <body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="../exercises/selectors.html">Selectors</a>
+          <a href="../exercises/typography.html">Typography</a>
+          <a href="../exercises/backgrounds.html">Backgrounds</a>
+          <a href="../exercises/images.html">Images</a>
+          <a href="../exercises/cards.html">Cards</a>
+          <a href="../exercises/transforms.html">Transforms</a>
+          <a href="../exercises/dark-mode.html">Dark Mode</a>
+          <a href="../exercises/advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="../layouts/display-exercises.html">Display</a>
+          <a href="../layouts/flexbox-exercises.html">Flexbox</a>
+          <a href="../layouts/grid-exercises.html">Grid</a>
+          <a href="../layouts/position-exercises.html">Position</a>
+          <a href="../layouts/holy-grail-comparison.html">Holy Grail</a>
+          <a href="../layouts/landing-page.html">Landing Page</a>
+          <a href="../layouts/dashboard-grid.html">Dashboard</a>
+          <a href="../layouts/responsive-demo.html">Responsive Demo</a>
+          <a href="../layouts/responsive-table.html">Responsive Table</a>
+          <a href="../layouts/magazine-float.html">Magazine Float</a>
+          <a href="../layouts/magazine-grid.html">Magazine Grid</a>
+          <a href="../layouts/portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
 
+    <div class="container">
+      <div class="form-wrapper">
+        <h2>Student Registration</h2>
+        <form action="https://formspree.io/f/xjgezyro" method="POST">
+          <label>Full Name:</label>
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+          />
 
-<nav>
-    <a href="profile.html">Profile</a> <br>
-    <a href="schedule.html">Schedule</a> <br>
-    <a href="navigation.html">Navigation</a> <br>
-    <a href="registration.html">Registration</a><br><br>
-</nav>
-<form>
+          <label>Registration Number:</label>
+          <input
+            type="text"
+            name="regnumber"
+            placeholder="Enter your registration number"
+            required
+          />
 
-<label>
-    Full Name:
-</label><br>
-<input type="text" name="fullname" placeholder="Enter your full name" required><br><br>
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
 
-<label>
-    Registration Number:
-</label><br>
-<input type="text" name="regnumber" placeholder="Enter your registration number" required><br><br>
+          <label>Password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
 
-<label>
-    Email:
-</label><br>
-<input type="email" name="email" placeholder="Enter your email" required><br><br>
-<label>
-    Password:
-</label><br>
-<input type="password" name="password" placeholder="Enter your password" required><br><br>
-<label>
-    Select the course:
-</label><br>
-<select name="course" required>
-    <option value="">--Choose--</option>
-    <option>CS 224L - Web Technologies</option>
-    <option>CS 111 - Programming Fundamentals</option>
-  </select><br><br>
-  <label>
-    Semester:
-  </label><br>
-  <input type="radio" name="semester" value="1" required>Semester 1<br>
-  <input type="radio" name="semester" value="2" required>Semester 2<br>
-  <input type="radio" name="semester" value="3" required>Semester 3<br><br>
+          <label>Select the course:</label>
+          <select name="course" required>
+            <option value="">-- Choose --</option>
+            <option>CS 224L - Web Technologies</option>
+            <option>CS 111 - Programming Fundamentals</option>
+          </select>
 
-  <input type="checkbox" name="terms" required>
-  <label>I agree to terms and conditions</label>
-<input type="submit" value="Submit Registration">
-</form>
-<a href="../index.html">Home</a> <br>
+          <label>Semester:</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="semester" value="1" required />
+              Semester 1</label
+            >
+            <label
+              ><input type="radio" name="semester" value="2" /> Semester
+              2</label
+            >
+            <label
+              ><input type="radio" name="semester" value="3" /> Semester
+              3</label
+            >
+          </div>
+
+          <div style="margin-top: 16px">
+            <input type="checkbox" name="terms" required id="terms" />
+            <label
+              for="terms"
+              style="display: inline; font-weight: normal; margin: 0"
+              >I agree to terms and conditions</label
+            >
+          </div>
+
+          <input type="submit" value="Submit Registration" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      CS 224L Web Technologies | UET Peshawar | Abdul Majid | 24PWBCS1258
+    </footer>
+  </body>
+</html>

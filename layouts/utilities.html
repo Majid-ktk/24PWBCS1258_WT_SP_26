@@ -1,59 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Utility Classes Demo</title>
-  <link rel="stylesheet" href="../styles/base.css">
-  <link rel="stylesheet" href="../styles/utilities.css">
-</head>
-<body>
 
-  <nav><a href="../../index.html">Home</a></nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utility Classes Demo</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/utilities.css" />
+</head>
+
+<body>
+  <nav class="global-nav">
+    <a href="../index.html">Home</a>
+    <a href="../Lab_02/profile.html">Profile</a>
+    <a href="../Lab_02/schedule.html">Schedule</a>
+    <a href="../Lab_02/registration.html">Register</a>
+    <div class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+      <div class="dropdown-content">
+        <a href="../exercises/selectors.html">Selectors</a>
+        <a href="../exercises/typography.html">Typography</a>
+        <a href="../exercises/backgrounds.html">Backgrounds</a>
+        <a href="../exercises/images.html">Images</a>
+        <a href="../exercises/cards.html">Cards</a>
+        <a href="../exercises/transforms.html">Transforms</a>
+        <a href="../exercises/dark-mode.html">Dark Mode</a>
+        <a href="../exercises/advanced.html">Advanced</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+      <div class="dropdown-content">
+        <a href="display-exercises.html">Display</a>
+        <a href="flexbox-exercises.html">Flexbox</a>
+        <a href="grid-exercises.html">Grid</a>
+        <a href="position-exercises.html">Position</a>
+        <a href="holy-grail-comparison.html">Holy Grail</a>
+        <a href="landing-page.html">Landing Page</a>
+        <a href="dashboard-grid.html">Dashboard</a>
+        <a href="responsive-demo.html">Responsive Demo</a>
+        <a href="responsive-table.html">Responsive Table</a>
+        <a href="magazine-float.html">Magazine Float</a>
+        <a href="magazine-grid.html">Magazine Grid</a>
+        <a href="portfolio-mixed.html">Portfolio</a>
+      </div>
+    </div>
+  </nav>
 
   <div class="container">
     <h1>Utility Classes Demo</h1>
 
     <h2>Show and Hide at Different Screen Sizes</h2>
-    <div class="hide-tablet hide-desktop" style="background:seagreen;color:white;padding:14px;margin-bottom:8px;">
+    <div class="hide-tablet hide-desktop" style="
+          background: seagreen;
+          color: white;
+          padding: 14px;
+          margin-bottom: 8px;
+        ">
       You are on MOBILE — this box is hidden on tablet and desktop
     </div>
-    <div class="hide-mobile hide-desktop" style="background:goldenrod;color:white;padding:14px;margin-bottom:8px;">
+    <div class="hide-mobile hide-desktop" style="
+          background: goldenrod;
+          color: white;
+          padding: 14px;
+          margin-bottom: 8px;
+        ">
       You are on TABLET — this box is hidden on mobile and desktop
     </div>
-    <div class="hide-mobile hide-tablet" style="background:navy;color:white;padding:14px;margin-bottom:8px;">
+    <div class="hide-mobile hide-tablet" style="
+          background: navy;
+          color: white;
+          padding: 14px;
+          margin-bottom: 8px;
+        ">
       You are on DESKTOP — this box is hidden on mobile and tablet
     </div>
 
     <h2>Text Alignment Utilities</h2>
-    <p class="text-left"   style="border:1px solid #ccc;padding:10px;">.text-left — text sits on the left</p>
-    <p class="text-center" style="border:1px solid #ccc;padding:10px;">.text-center — text is centered</p>
-    <p class="text-right"  style="border:1px solid #ccc;padding:10px;">.text-right — text sits on the right</p>
+    <p class="text-left" style="border: 1px solid #ccc; padding: 10px">
+      .text-left — text sits on the left
+    </p>
+    <p class="text-center" style="border: 1px solid #ccc; padding: 10px">
+      .text-center — text is centered
+    </p>
+    <p class="text-right" style="border: 1px solid #ccc; padding: 10px">
+      .text-right — text sits on the right
+    </p>
 
     <h2>Flexbox Utilities</h2>
-    <div class="d-flex justify-between" style="background:#f0f4f8;padding:14px;border-radius:8px;margin-bottom:12px;">
+    <div class="d-flex justify-between" style="
+          background: #f0f4f8;
+          padding: 14px;
+          border-radius: 8px;
+          margin-bottom: 12px;
+        ">
       <span>Item A</span>
       <span>Item B</span>
       <span>Item C</span>
     </div>
-    <div class="d-flex align-center" style="gap:12px;background:#f0f4f8;padding:14px;border-radius:8px;">
-      <div style="background:navy;color:white;padding:10px 20px;">Fixed</div>
-      <div class="flex-1" style="background:steelblue;color:white;padding:10px;">flex-1 — grows to fill remaining space</div>
-      <div style="background:navy;color:white;padding:10px 20px;">Fixed</div>
+    <div class="d-flex align-center" style="
+          gap: 12px;
+          background: #f0f4f8;
+          padding: 14px;
+          border-radius: 8px;
+        ">
+      <div style="background: navy; color: white; padding: 10px 20px">
+        Fixed
+      </div>
+      <div class="flex-1" style="background: steelblue; color: white; padding: 10px">
+        flex-1 — grows to fill remaining space
+      </div>
+      <div style="background: navy; color: white; padding: 10px 20px">
+        Fixed
+      </div>
     </div>
 
     <h2>Spacing Utilities</h2>
-    <div style="background:#f0f4f8;border-radius:8px;overflow:hidden;">
-      <div class="p-1" style="border-bottom:1px solid #ddd;font-size:14px;">.p-1 — small padding (8px)</div>
-      <div class="p-2" style="border-bottom:1px solid #ddd;font-size:14px;">.p-2 — medium padding (16px)</div>
-      <div class="p-3" style="font-size:14px;">.p-3 — large padding (24px)</div>
+    <div style="background: #f0f4f8; border-radius: 8px; overflow: hidden">
+      <div class="p-1" style="border-bottom: 1px solid #ddd; font-size: 14px">
+        .p-1 — small padding (8px)
+      </div>
+      <div class="p-2" style="border-bottom: 1px solid #ddd; font-size: 14px">
+        .p-2 — medium padding (16px)
+      </div>
+      <div class="p-3" style="font-size: 14px">
+        .p-3 — large padding (24px)
+      </div>
     </div>
 
     <h2>Width Utilities</h2>
-    <div class="w-100 mt-2" style="background:steelblue;color:white;padding:10px;text-align:center;border-radius:6px;">.w-100 — full width</div>
-    <div class="w-50 mt-1" style="background:navy;color:white;padding:10px;text-align:center;border-radius:6px;">.w-50 — half width (full on mobile)</div>
-
+    <div class="w-100 mt-2" style="
+          background: steelblue;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          border-radius: 6px;
+        ">
+      .w-100 — full width
+    </div>
+    <div class="w-50 mt-1" style="
+          background: navy;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          border-radius: 6px;
+        ">
+      .w-50 — half width (full on mobile)
+    </div>
   </div>
-
 </body>
+
 </html>

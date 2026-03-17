@@ -16,7 +16,9 @@
 }
 
 /* Inline-block — side by side but accepts width and height */
-.iblock-row { margin: 14px 0; }
+.iblock-row {
+  margin: 14px 0;
+}
 .demo-iblock {
   display: inline-block;
   width: 160px;
@@ -28,24 +30,59 @@
 }
 
 /* display: none removes the element completely */
-.d-none   { display: none; }
-
-/* visibility: hidden hides it but keeps the space */
-.v-hidden { visibility: hidden; }
-
-/* Fake table using display: table */
-.fake-table   { display: table; width: 100%; border-spacing: 2px; }
-.fake-row     { display: table-row; }
-.fake-cell    { display: table-cell; padding: 10px 14px; border: 1px solid #ccc; }
-.header-cell  { background-color: navy; color: white; font-weight: bold; }
-
-/* Responsive — hide/show based on screen size */
-.show-desktop { display: block; background: navy;   color: white; padding: 14px; }
-.show-mobile  { display: none;  background: crimson; color: white; padding: 14px; }
-
-@media (max-width: 600px) {
-  .show-desktop { display: none; }
-  .show-mobile  { display: block; }
-  .demo-iblock  { display: block; width: 100%; margin-bottom: 6px; }
+.d-none {
+  display: none;
 }
 
+/* visibility: hidden hides it but keeps the space */
+.v-hidden {
+  visibility: hidden;
+}
+
+/* Fake table using display: table */
+.fake-table {
+  display: table;
+  width: 100%;
+  border-spacing: 2px;
+}
+.fake-row {
+  display: table-row;
+}
+.fake-cell {
+  display: table-cell;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+}
+.header-cell {
+  background-color: navy;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive — hide/show based on screen size */
+.show-desktop {
+  display: block;
+  background: navy;
+  color: white;
+  padding: 14px;
+}
+.show-mobile {
+  display: none;
+  background: crimson;
+  color: white;
+  padding: 14px;
+}
+
+@media (max-width: 600px) {
+  .show-desktop {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
+  .demo-iblock {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+}

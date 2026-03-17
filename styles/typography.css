@@ -1,22 +1,63 @@
-.font-roboto   { font-family: 'Roboto', sans-serif; }
-.font-playfair { font-family: 'Playfair Display', serif; font-size: 1.3rem; }
-.font-fira     { font-family: 'Fira Code', monospace; }
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font-playfair {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+}
+.font-fira {
+  font-family: "Fira Code", monospace;
+}
 
-.size-px  { font-size: 18px; }
-.size-em  { font-size: 1.5em; }
-.size-rem { font-size: 1.2rem; }
-.size-pct { font-size: 120%; }
+.size-px {
+  font-size: 18px;
+}
+.size-em {
+  font-size: 1.5em;
+}
+.size-rem {
+  font-size: 1.2rem;
+}
+.size-pct {
+  font-size: 120%;
+}
 
-.align-left    { text-align: left; }
-.align-center  { text-align: center; }
-.align-right   { text-align: right; }
-.align-justify { text-align: justify; }
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+.align-justify {
+  text-align: justify;
+}
 
-.underline     { text-decoration: underline; }
-.strikethrough { text-decoration: line-through; }
-.upper         { text-transform: uppercase; }
-.lower         { text-transform: lowercase; }
-.capitalize    { text-transform: capitalize; }
+.underline {
+  text-decoration: underline;
+}
+.strikethrough {
+  text-decoration: line-through;
+}
+.upper {
+  text-transform: uppercase;
+}
+.lower {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
 
-.shadow-soft { text-shadow: 2px 2px 4px rgba(0,0,0,0.4); font-size: 1.3rem; }
-.shadow-glow { text-shadow: 0 0 10px blue, 0 0 20px lightblue; font-size: 1.3rem; }
+.shadow-soft {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 1.3rem;
+}
+.shadow-glow {
+  text-shadow:
+    0 0 10px blue,
+    0 0 20px lightblue;
+  font-size: 1.3rem;
+}

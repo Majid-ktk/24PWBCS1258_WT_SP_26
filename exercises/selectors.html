@@ -1,58 +1,89 @@
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Selectors</title>
-  <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="../Lab_02/profile.html">Profile</a>
+      <a href="../Lab_02/schedule.html">Schedule</a>
+      <a href="../Lab_02/registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="selectors.html">Selectors</a>
+          <a href="typography.html">Typography</a>
+          <a href="backgrounds.html">Backgrounds</a>
+          <a href="images.html">Images</a>
+          <a href="cards.html">Cards</a>
+          <a href="transforms.html">Transforms</a>
+          <a href="dark-mode.html">Dark Mode</a>
+          <a href="advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="../layouts/display-exercises.html">Display</a>
+          <a href="../layouts/flexbox-exercises.html">Flexbox</a>
+          <a href="../layouts/grid-exercises.html">Grid</a>
+          <a href="../layouts/position-exercises.html">Position</a>
+          <a href="../layouts/holy-grail-comparison.html">Holy Grail</a>
+          <a href="../layouts/landing-page.html">Landing Page</a>
+          <a href="../layouts/dashboard-grid.html">Dashboard</a>
+          <a href="../layouts/responsive-demo.html">Responsive Demo</a>
+          <a href="../layouts/responsive-table.html">Responsive Table</a>
+          <a href="../layouts/magazine-float.html">Magazine Float</a>
+          <a href="../layouts/magazine-grid.html">Magazine Grid</a>
+          <a href="../layouts/portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
 
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="../Lab_02/profile.html">Profile</a>
-    <a href="../Lab_02/schedule.html">Schedule</a>
-    <a href="../Lab_02/registration.html">Register</a>
-  </nav>
+    <div id="main-box">
+      <h2>Selector Demo</h2>
+      <p class="highlight">I have the highlight class.</p>
+      <p>Plain paragraph inside the div.</p>
+      <span><p>Nested inside a span.</p></span>
+    </div>
 
-  <div id="main-box">
-    <h2>Selector Demo</h2>
-    <p class="highlight">I have the highlight class.</p>
-    <p>Plain paragraph inside the div.</p>
-    <span><p>Nested inside a span.</p></span>
-  </div>
+    <h3>After the div</h3>
+    <p>Adjacent sibling paragraph.</p>
+    <p>General sibling paragraph one.</p>
+    <p>General sibling paragraph two.</p>
 
-  <h3>After the div</h3>
-  <p>Adjacent sibling paragraph.</p>
-  <p>General sibling paragraph one.</p>
-  <p>General sibling paragraph two.</p>
+    <ul class="my-list">
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+      <li>Last item</li>
+    </ul>
 
-  <ul class="my-list">
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-    <li>Last item</li>
-  </ul>
+    <a href="https://github.com/majid-ktk">My GitHub</a>
+    <a href="about.html">About Page</a>
+    <input type="text" placeholder="Your name" />
+    <input type="email" placeholder="Your email" />
 
-  <a href="https://github.com/majid-ktk">My GitHub</a>
-  <a href="about.html">About Page</a>
-  <input type="text"  placeholder="Your name">
-  <input type="email" placeholder="Your email">
+    <p class="story">Once there was a student who was learning CSS...</p>
+    <p class="tip">Always save your file before refreshing.</p>
+    <p class="done">Task completed.</p>
 
-  <p class="story">Once there was a student who was learning CSS...</p>
-  <p class="tip">Always save your file before refreshing.</p>
-  <p class="done">Task completed.</p>
+    <h2>Button Collection</h2>
 
-  <h2>Button Collection</h2>
-
-<div class="btn-row">
-  <button class="btn btn-primary">Primary</button>
-  <button class="btn btn-secondary">Secondary</button>
-  <button class="btn btn-danger">Delete</button>
-  <button class="btn btn-outline">Outline</button>
-  <button class="btn btn-pill">Pill</button>
-  <button class="btn btn-gradient">Gradient</button>
-  <button class="btn btn-sm">Small</button>
-  <button class="btn btn-lg">Large</button>
-  <button class="btn btn-primary" disabled>Disabled</button>
-</div>
-<br><br><br><br>
-</body>
+    <div class="btn-row">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-danger">Delete</button>
+      <button class="btn btn-outline">Outline</button>
+      <button class="btn btn-pill">Pill</button>
+      <button class="btn btn-gradient">Gradient</button>
+      <button class="btn btn-sm">Small</button>
+      <button class="btn btn-lg">Large</button>
+      <button class="btn btn-primary" disabled>Disabled</button>
+    </div>
+    <br /><br /><br /><br />
+  </body>
 </html>

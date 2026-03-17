@@ -1,70 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Web Technologies Portfolio - CS 224L UET Peshawar">
-  <meta name="author" content="Abdul Majid - 24PWBCS1258">
-  <title>CS 224L - Web Technologies Portfolio</title>
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>Abdul Majid</h1>
-    <p>Registration No: 24PWBCS1258 | CS 224L Web Technologies</p>
-  </div>
-
-  <!-- Navigation Menu -->
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="./Lab_02/profile.html">Profile</a>
-    <a href="./Lab_02/schedule.html">Schedule</a>
-    <a href="./Lab_02/registration.html">Register</a>
-    <div class="dropdown">
-      <a href="#">Exercises</a>
-      <div class="dropdown-menu">
-        <a href="exercises/selectors.html">Selectors</a>
-        <a href="exercises/typography.html">Typography</a>
-        <a href="exercises/backgrounds.html">Backgrounds</a>
-        <a href="exercises/images.html">Images</a>
-        <a href="exercises/cards.html">Cards</a>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Technologies Portfolio - CS 224L UET Peshawar"
+    />
+    <meta name="author" content="Abdul Majid - 24PWBCS1258" />
+    <title>CS 224L - Web Technologies Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Abdul Majid</h1>
+      <p>Registration No: 24PWBCS1258 | CS 224L Web Technologies</p>
     </div>
-    <a href="https://github.com/majid-ktk" target="_blank">GitHub</a>
-  </nav>
 
-  <!-- Main Content Wrapper -->
-  <div class="container">
-    <main>
-      <h2>Welcome to My Portfolio</h2>
-      <p>
-        This is my personal web development portfolio for the CS 224L 
-        Web Technologies course at the University of Engineering and 
-        Technology, Peshawar. All lab work is organized here and 
-        published live using GitHub Pages.
-      </p>
+    <nav class="global-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="Lab_02/profile.html">Profile</a>
+      <a href="Lab_02/schedule.html">Schedule</a>
+      <a href="Lab_02/registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="exercises/selectors.html">Selectors</a>
+          <a href="exercises/typography.html">Typography</a>
+          <a href="exercises/backgrounds.html">Backgrounds</a>
+          <a href="exercises/images.html">Images</a>
+          <a href="exercises/cards.html">Cards</a>
+          <a href="exercises/transforms.html">Transforms</a>
+          <a href="exercises/dark-mode.html">Dark Mode</a>
+          <a href="exercises/advanced.html">Advanced</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="layouts/display-exercises.html">Display</a>
+          <a href="layouts/flexbox-exercises.html">Flexbox</a>
+          <a href="layouts/grid-exercises.html">Grid</a>
+          <a href="layouts/position-exercises.html">Position</a>
+          <a href="layouts/holy-grail-comparison.html">Holy Grail</a>
+          <a href="layouts/landing-page.html">Landing Page</a>
+          <a href="layouts/dashboard-grid.html">Dashboard</a>
+          <a href="layouts/responsive-demo.html">Responsive Demo</a>
+          <a href="layouts/responsive-table.html">Responsive Table</a>
+          <a href="layouts/magazine-float.html">Magazine Float</a>
+          <a href="layouts/magazine-grid.html">Magazine Grid</a>
+          <a href="layouts/portfolio-mixed.html">Portfolio</a>
+        </div>
+      </div>
+    </nav>
 
-      <h2>Lab 01 — Git & GitHub</h2>
-      <ul>
-        <li><a href="index.html">Lab 01 Work</a></li>
-      </ul>
+    <!-- Main Content Wrapper -->
+    <div class="container">
+      <!-- Profile Preview Card -->
+      <div class="profile-card" style="margin-bottom: 32px">
+        <img src="assets/profile.jpg" alt="Abdul Majid" />
+        <div>
+          <h1>Abdul Majid</h1>
+          <p><strong>Reg No:</strong> 24PWBCS1258</p>
+          <p>
+            <strong>Course:</strong> CS 224L Web Technologies — UET Peshawar
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:itxmajidktk@gmail.com">itxmajidktk@gmail.com</a>
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/majid-ktk" target="_blank"
+              >github.com/majid-ktk</a
+            >
+          </p>
+        </div>
+      </div>
 
-      <h2>Lab 02 — HTML Pages</h2>
-      <ul>
-        <li><a href="Lab_02/profile.html">My Profile Page</a></li>
-        <li><a href="Lab_02/schedule.html">Course Schedule Table</a></li>
-        <li><a href="Lab_02/navigation.html">Navigation Menu Demo</a></li>
-        <li><a href="Lab_02/registration.html">Student Registration Form</a></li>
-      </ul>
-    </main>
-  </div>
+      <main>
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          This is my personal web development portfolio for the CS 224L Web
+          Technologies course at the University of Engineering and Technology,
+          Peshawar. All lab work is organized here and published live using
+          GitHub Pages.
+        </p>
 
-  <!-- Footer -->
-  <footer>
-    CS 224L Web Technologies | Department of Computer Science | UET Peshawar
-  </footer>
+        <h2 style="margin-top: 28px">Lab 01 — Git &amp; GitHub</h2>
+        <div class="index-cards">
+          <a href="index.html" class="index-card"
+            ><span>🏠</span> Lab 01 Work</a
+          >
+        </div>
 
-</body>
+        <h2 style="margin-top: 28px">Lab 02 — HTML Pages</h2>
+        <div class="index-cards">
+          <a href="Lab_02/profile.html" class="index-card"
+            ><span>👤</span> My Profile</a
+          >
+          <a href="Lab_02/schedule.html" class="index-card"
+            ><span>📅</span> Course Schedule</a
+          >
+          <a href="Lab_02/navigation.html" class="index-card"
+            ><span>🧭</span> Navigation Demo</a
+          >
+          <a href="Lab_02/registration.html" class="index-card"
+            ><span>📋</span> Registration Form</a
+          >
+        </div>
+
+        <h2 style="margin-top: 28px">Lab 03–04 — CSS Exercises</h2>
+        <div class="index-cards">
+          <a href="exercises/selectors.html" class="index-card"
+            ><span>🎯</span> Selectors</a
+          >
+          <a href="exercises/typography.html" class="index-card"
+            ><span>🔤</span> Typography</a
+          >
+          <a href="exercises/backgrounds.html" class="index-card"
+            ><span>🖼️</span> Backgrounds</a
+          >
+          <a href="exercises/images.html" class="index-card"
+            ><span>📷</span> Images</a
+          >
+          <a href="exercises/cards.html" class="index-card"
+            ><span>🃏</span> Cards</a
+          >
+          <a href="exercises/transforms.html" class="index-card"
+            ><span>🔄</span> Transforms</a
+          >
+          <a href="exercises/dark-mode.html" class="index-card"
+            ><span>🌙</span> Dark Mode</a
+          >
+          <a href="exercises/advanced.html" class="index-card"
+            ><span>✨</span> Advanced</a
+          >
+        </div>
+
+        <h2 style="margin-top: 28px">Lab 05–06 — Layouts</h2>
+        <div class="index-cards">
+          <a href="layouts/display-exercises.html" class="index-card"
+            ><span>📦</span> Display</a
+          >
+          <a href="layouts/flexbox-exercises.html" class="index-card"
+            ><span>↔️</span> Flexbox</a
+          >
+          <a href="layouts/grid-exercises.html" class="index-card"
+            ><span>⊞</span> Grid</a
+          >
+          <a href="layouts/position-exercises.html" class="index-card"
+            ><span>📌</span> Position</a
+          >
+          <a href="layouts/holy-grail-comparison.html" class="index-card"
+            ><span>🏆</span> Holy Grail</a
+          >
+          <a href="layouts/landing-page.html" class="index-card"
+            ><span>🚀</span> Landing Page</a
+          >
+          <a href="layouts/dashboard-grid.html" class="index-card"
+            ><span>📊</span> Dashboard</a
+          >
+          <a href="layouts/responsive-demo.html" class="index-card"
+            ><span>📱</span> Responsive Demo</a
+          >
+          <a href="layouts/responsive-table.html" class="index-card"
+            ><span>📋</span> Responsive Table</a
+          >
+          <a href="layouts/magazine-float.html" class="index-card"
+            ><span>📰</span> Magazine Float</a
+          >
+          <a href="layouts/magazine-grid.html" class="index-card"
+            ><span>🗞️</span> Magazine Grid</a
+          >
+          <a href="layouts/portfolio-mixed.html" class="index-card"
+            ><span>💼</span> Portfolio</a
+          >
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      CS 224L Web Technologies | Department of Computer Science | UET Peshawar
+    </footer>
+  </body>
 </html>

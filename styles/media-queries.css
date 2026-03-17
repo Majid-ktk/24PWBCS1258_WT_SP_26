@@ -1,13 +1,32 @@
 /* ── Mobile base — applies to all screen sizes first ── */
-.bp-bar { background-color: crimson; color: white; text-align: center; padding: 12px; font-weight: bold; }
+.bp-bar {
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+}
 
 /* Only the mobile span visible on small screens */
-.bp-m { display: inline; }
-.bp-t { display: none; }
-.bp-d { display: none; }
+.bp-m {
+  display: inline;
+}
 
-.rsp-h1 { font-size: 1.4rem; }
-.rsp-p  { font-size: 14px; }
+.bp-t {
+  display: none;
+}
+
+.bp-d {
+  display: none;
+}
+
+.rsp-h1 {
+  font-size: 1.4rem;
+}
+
+.rsp-p {
+  font-size: 14px;
+}
 
 .bp-grid {
   display: grid;
@@ -15,6 +34,7 @@
   gap: 12px;
   margin-top: 16px;
 }
+
 .bp-box {
   background-color: steelblue;
   color: white;
@@ -27,121 +47,362 @@
 
 /* ── Tablet — 600px and wider ── */
 @media (min-width: 600px) {
-  .bp-bar { background-color: goldenrod; }
-  .bp-m   { display: none; }
-  .bp-t   { display: inline; }
-  .rsp-h1 { font-size: 1.9rem; }
-  .rsp-p  { font-size: 16px; }
-  .bp-grid { grid-template-columns: repeat(2, 1fr); }
+  .bp-bar {
+    background-color: goldenrod;
+  }
+
+  .bp-m {
+    display: none;
+  }
+
+  .bp-t {
+    display: inline;
+  }
+
+  .rsp-h1 {
+    font-size: 1.9rem;
+  }
+
+  .rsp-p {
+    font-size: 16px;
+  }
+
+  .bp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ── Desktop — 1024px and wider ── */
 @media (min-width: 1024px) {
-  .bp-bar { background-color: seagreen; }
-  .bp-t   { display: none; }
-  .bp-d   { display: inline; }
-  .rsp-h1 { font-size: 2.5rem; }
-  .rsp-p  { font-size: 18px; }
-  .bp-grid { grid-template-columns: repeat(4, 1fr); }
+  .bp-bar {
+    background-color: seagreen;
+  }
+
+  .bp-t {
+    display: none;
+  }
+
+  .bp-d {
+    display: inline;
+  }
+
+  .rsp-h1 {
+    font-size: 2.5rem;
+  }
+
+  .rsp-p {
+    font-size: 18px;
+  }
+
+  .bp-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* ── Large desktop — 1200px and wider ── */
 @media (min-width: 1200px) {
-  .container { max-width: 1140px; }
+  .container {
+    max-width: 1140px;
+  }
 }
 
 /* ── Dark mode — detects system preference ── */
 @media (prefers-color-scheme: dark) {
-  body { background-color: #111; color: #26b15d; }
-  .bp-box { background-color: #1F4E79; }
+  body {
+    background-color: #111;
+    color: #26b15d;
+  }
+
+  .bp-box {
+    background-color: #1f4e79;
+  }
 }
+
 /* Table wrapper allows horizontal scroll on small screens */
-.table-wrapper { overflow-x: auto; }
-.rsp-table { width: 100%; border-collapse: collapse; background: white; font-size: 15px; }
-.rsp-table thead tr { background-color: navy; color: rgb(1, 14, 86); }
-.rsp-table th, .rsp-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #5d8742; }
-.rsp-table tbody tr:nth-child(even) { background-color: #1e5d9c; }
-.rsp-table tbody tr:hover { background-color: #3a7aae; }
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.rsp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 15px;
+}
+
+.rsp-table thead tr {
+  background-color: navy;
+  color: rgb(1, 14, 86);
+}
+
+.rsp-table th,
+.rsp-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #5d8742;
+}
+
+.rsp-table tbody tr:nth-child(even) {
+  background-color: #1e5d9c;
+}
+
+.rsp-table tbody tr:hover {
+  background-color: #3a7aae;
+}
+
 /* Mobile — convert rows to cards */
 @media (max-width: 600px) {
-  .rsp-table thead { display: none; }
-  .rsp-table, .rsp-table tbody, .rsp-table tr, .rsp-table td { display: block; width: 100%; }
-  .rsp-table tr { background: white; margin-bottom: 14px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 10px; }
-  .rsp-table td { padding: 8px 12px; border: none; }
-  .rsp-table td::before { content: attr(data-label); font-weight: bold; color: navy; display: inline-block; width: 120px; }
+  .rsp-table thead {
+    display: none;
+  }
+
+  .rsp-table,
+  .rsp-table tbody,
+  .rsp-table tr,
+  .rsp-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .rsp-table tr {
+    background: white;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+  }
+
+  .rsp-table td {
+    padding: 8px 12px;
+    border: none;
+  }
+
+  .rsp-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: navy;
+    display: inline-block;
+    width: 120px;
+  }
 }
+
 /* Hero — mobile base */
-.lp-hero { background: linear-gradient(to bottom, navy, steelblue); color: white; text-align: center; padding: 50px 20px; }
-.lp-hero h1 { font-size: 1.8rem; margin-bottom: 10px; }
-.lp-hero p  { font-size: 1rem; opacity: 0.9; margin-bottom: 20px; }
-.lp-section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
-.lp-section h2 { text-align: center; margin-bottom: 24px; }
+.lp-hero {
+  background: linear-gradient(to bottom, navy, steelblue);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.lp-hero h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.lp-hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.lp-section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.lp-section h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
 /* Features — stacked on mobile */
-.lp-features { display: flex; flex-wrap: wrap; gap: 16px; }
-.lp-feature  { flex: 1 1 100%; background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-.lp-feature h3 { color: navy; margin-bottom: 8px; }
+.lp-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.lp-feature {
+  flex: 1 1 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lp-feature h3 {
+  color: navy;
+  margin-bottom: 8px;
+}
+
 /* Labs completed */
-.lp-dark { background-color: #f0f4f8; }
-.lp-labs { display: flex; flex-wrap: wrap; gap: 14px; }
-.lp-lab  { flex: 1 1 100%; background: white; padding: 16px; border-radius: 8px; border-left: 4px solid navy; }
-.lp-footer { background-color: navy; color: white; text-align: center; padding: 20px; }
-.lp-footer a { color: lightsteelblue; }
+.lp-dark {
+  background-color: #f0f4f8;
+}
+
+.lp-labs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.lp-lab {
+  flex: 1 1 100%;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid navy;
+}
+
+.lp-footer {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.lp-footer a {
+  color: lightsteelblue;
+}
+
 /* Tablet — features go 2 per row */
 @media (min-width: 600px) {
-  .lp-hero h1 { font-size: 2.2rem; }
-  .lp-feature { flex: 1 1 calc(50% - 16px); }
-  .lp-lab     { flex: 1 1 calc(50% - 14px); }
+  .lp-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .lp-feature {
+    flex: 1 1 calc(50% - 16px);
+  }
+
+  .lp-lab {
+    flex: 1 1 calc(50% - 14px);
+  }
 }
+
 /* Desktop — features 3 per row, labs 4 per row */
 @media (min-width: 1024px) {
-  .lp-hero { padding: 80px 20px; }
-  .lp-hero h1 { font-size: 3rem; }
-  .lp-feature { flex: 1 1 calc(33% - 16px); }
-  .lp-lab     { flex: 1 1 calc(25% - 14px); }
+  .lp-hero {
+    padding: 80px 20px;
+  }
+
+  .lp-hero h1 {
+    font-size: 3rem;
+  }
+
+  .lp-feature {
+    flex: 1 1 calc(33% - 16px);
+  }
+
+  .lp-lab {
+    flex: 1 1 calc(25% - 14px);
+  }
 }
 
 /* Base — mobile phones under 480px */
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .rsp-container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 16px;
 }
+
 .bp-indicator {
-  position: fixed; bottom: 10px; right: 10px;
-  background: crimson; color: white;
-  padding: 6px 14px; border-radius: 20px;
-  font-size: 12px; font-weight: bold; z-index: 9999;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: crimson;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 9999;
 }
-.bp-indicator::after { content: 'XS — Mobile'; }
+
+.bp-indicator::after {
+  content: "XS — Mobile";
+}
+
 /* Small mobile — 480px and wider */
 @media (min-width: 480px) {
-  .bp-indicator { background: orangered; }
-  .bp-indicator::after { content: 'SM — Large Phone'; }
+  .bp-indicator {
+    background: orangered;
+  }
+
+  .bp-indicator::after {
+    content: "SM — Large Phone";
+  }
 }
+
 /* Tablet — 768px and wider */
 @media (min-width: 768px) {
-  .bp-indicator { background: goldenrod; }
-  .bp-indicator::after { content: 'MD — Tablet'; }
+  .bp-indicator {
+    background: goldenrod;
+  }
+
+  .bp-indicator::after {
+    content: "MD — Tablet";
+  }
 }
+
 /* Small desktop — 1024px and wider */
 @media (min-width: 1024px) {
-  .bp-indicator { background: steelblue; }
-  .bp-indicator::after { content: 'LG — Small Desktop'; }
+  .bp-indicator {
+    background: steelblue;
+  }
+
+  .bp-indicator::after {
+    content: "LG — Small Desktop";
+  }
 }
+
 /* Standard desktop — 1200px and wider */
 @media (min-width: 1200px) {
-  .bp-indicator { background: seagreen; }
-  .bp-indicator::after { content: 'XL — Desktop'; }
-  .rsp-container { padding: 0 24px; }
+  .bp-indicator {
+    background: seagreen;
+  }
+
+  .bp-indicator::after {
+    content: "XL — Desktop";
+  }
+
+  .rsp-container {
+    padding: 0 24px;
+  }
 }
+
 /* Large desktop — 1400px and wider */
 @media (min-width: 1400px) {
+<<<<<<< HEAD
   .bp-indicator { background: navy; }
   .bp-indicator::after { content: 'XXL — Large Desktop'; }}
 /* ── Light mode (default) ── */
 .dm-body { background-color: #f7f7f7; color: #111; }
+=======
+  .bp-indicator {
+    background: navy;
+  }
+
+  .bp-indicator::after {
+    content: "XXL — Large Desktop";
+  }
+}
+
+/* ── Light mode (default) ── */
+.dm-body {
+  background-color: #f7f7f7;
+  color: #111;
+}
+>>>>>>> 4fbe3fa (Lab 05-06 all 18 tasks complete - layout and responsive design)
 
 .dm-nav {
   background: navy;
@@ -149,13 +410,24 @@
   display: flex;
   gap: 4px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4fbe3fa (Lab 05-06 all 18 tasks complete - layout and responsive design)
 .dm-nav a {
   color: white;
   text-decoration: none;
   padding: 13px 16px;
   display: block;
 }
+<<<<<<< HEAD
 .dm-nav a:hover { background: steelblue; }
+=======
+
+.dm-nav a:hover {
+  background: steelblue;
+}
+>>>>>>> 4fbe3fa (Lab 05-06 all 18 tasks complete - layout and responsive design)
 
 .dm-container {
   max-width: 800px;
@@ -171,7 +443,15 @@
   margin-bottom: 16px;
   border-left: 4px solid navy;
 }
+<<<<<<< HEAD
 .dm-card h3 { color: navy; margin-bottom: 6px; }
+=======
+
+.dm-card h3 {
+  color: navy;
+  margin-bottom: 6px;
+}
+>>>>>>> 4fbe3fa (Lab 05-06 all 18 tasks complete - layout and responsive design)
 
 .dm-btn {
   background: navy;
@@ -180,6 +460,7 @@
   padding: 11px 24px;
   border-radius: 5px;
   cursor: pointer;
+<<<<<<< HEAD
   transition: transform 0.3s, background-color 0.3s;
 }
 .dm-btn:hover { transform: scale(1.06); background: steelblue; }
@@ -200,11 +481,85 @@ html.dark-mode .dm-btn  { background: steelblue; }
 /* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
+=======
+  transition:
+    transform 0.3s,
+    background-color 0.3s;
+}
+
+.dm-btn:hover {
+  transform: scale(1.06);
+  background: steelblue;
+}
+
+/* ── Dark mode ── */
+@media (prefers-color-scheme: dark) {
+  html:not(.light-mode) .dm-body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  html:not(.light-mode) .dm-card {
+    background: #1e1e1e;
+    border-color: #333;
+    border-left-color: steelblue;
+  }
+
+  html:not(.light-mode) .dm-card h3 {
+    color: #90caf9;
+  }
+
+  html:not(.light-mode) .dm-btn {
+    background: steelblue;
+  }
+}
+
+html.dark-mode .dm-body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+html.dark-mode .dm-card {
+  background: #1e1e1e;
+  border-color: #333;
+  border-left-color: steelblue;
+}
+
+html.dark-mode .dm-card h3 {
+  color: #90caf9;
+}
+
+html.dark-mode .dm-btn {
+  background: steelblue;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+>>>>>>> 4fbe3fa (Lab 05-06 all 18 tasks complete - layout and responsive design)
 }
 
 /* ── Print ── */
 @media print {
+<<<<<<< HEAD
   .dm-nav { display: none; }
   .dm-body { background: white; color: black; }
   .dm-btn  { display: none; }
+=======
+  .dm-nav {
+    display: none;
+  }
+
+  .dm-body {
+    background: white;
+    color: black;
+  }
+
+  .dm-btn {
+    display: none;
+  }
+>>>>>>> 4fbe3fa (Lab 05-06 all 18 tasks complete - layout and responsive design)
 }

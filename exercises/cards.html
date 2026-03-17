@@ -1,55 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Cards</title>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/components.css">
-</head>
-<body>
-
-  <nav>
-    <a href="../../index.html">Home</a>
-    <a href="../../lab02/profile.html">Profile</a>
-  </nav>
-
-  <div class="container">
-    <h1>Course Cards</h1>
-
-    <div class="card-row">
-
-      <div class="card">
-        <img src="https://picsum.photos/300/180?1" alt="Web Dev">
-        <div class="card-body">
-          <h3>Web Development</h3>
-          <p>Learn HTML, CSS and JavaScript from the basics.</p>
-          <span class="card-price">Rs. 2500</span>
-          <button class="btn btn-primary">Enroll Now</button>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+  </head>
+  <body>
+    <nav class="global-nav">
+      <a href="../index.html">Home</a>
+      <a href="../Lab_02/profile.html">Profile</a>
+      <a href="../Lab_02/schedule.html">Schedule</a>
+      <a href="../Lab_02/registration.html">Register</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+        <div class="dropdown-content">
+          <a href="selectors.html">Selectors</a>
+          <a href="typography.html">Typography</a>
+          <a href="backgrounds.html">Backgrounds</a>
+          <a href="images.html">Images</a>
+          <a href="cards.html">Cards</a>
+          <a href="transforms.html">Transforms</a>
+          <a href="dark-mode.html">Dark Mode</a>
+          <a href="advanced.html">Advanced</a>
         </div>
       </div>
-
-      <div class="card">
-        <img src="https://picsum.photos/300/180?2" alt="Python">
-        <div class="card-body">
-          <h3>Python Programming</h3>
-          <p>Start programming with Python from scratch.</p>
-          <span class="card-price">Rs. 3000</span>
-          <button class="btn btn-primary">Enroll Now</button>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+        <div class="dropdown-content">
+          <a href="../layouts/display-exercises.html">Display</a>
+          <a href="../layouts/flexbox-exercises.html">Flexbox</a>
+          <a href="../layouts/grid-exercises.html">Grid</a>
+          <a href="../layouts/position-exercises.html">Position</a>
+          <a href="../layouts/holy-grail-comparison.html">Holy Grail</a>
+          <a href="../layouts/landing-page.html">Landing Page</a>
+          <a href="../layouts/dashboard-grid.html">Dashboard</a>
+          <a href="../layouts/responsive-demo.html">Responsive Demo</a>
+          <a href="../layouts/responsive-table.html">Responsive Table</a>
+          <a href="../layouts/magazine-float.html">Magazine Float</a>
+          <a href="../layouts/magazine-grid.html">Magazine Grid</a>
+          <a href="../layouts/portfolio-mixed.html">Portfolio</a>
         </div>
       </div>
+    </nav>
 
-      <div class="card">
-        <img src="https://picsum.photos/300/180?3" alt="Database">
-        <div class="card-body">
-          <h3>Database Systems</h3>
-          <p>Learn SQL and relational databases properly.</p>
-          <span class="card-price">Rs. 2000</span>
-          <button class="btn btn-primary">Enroll Now</button>
+    <div class="container">
+      <h1>Course Cards</h1>
+
+      <div class="card-row">
+        <div class="card">
+          <img src="https://picsum.photos/300/180?1" alt="Web Dev" />
+          <div class="card-body">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS and JavaScript from the basics.</p>
+            <span class="card-price">Rs. 2500</span>
+            <button class="btn btn-primary">Enroll Now</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/300/180?2" alt="Python" />
+          <div class="card-body">
+            <h3>Python Programming</h3>
+            <p>Start programming with Python from scratch.</p>
+            <span class="card-price">Rs. 3000</span>
+            <button class="btn btn-primary">Enroll Now</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/300/180?3" alt="Database" />
+          <div class="card-body">
+            <h3>Database Systems</h3>
+            <p>Learn SQL and relational databases properly.</p>
+            <span class="card-price">Rs. 2000</span>
+            <button class="btn btn-primary">Enroll Now</button>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-
-</body>
+  </body>
 </html>

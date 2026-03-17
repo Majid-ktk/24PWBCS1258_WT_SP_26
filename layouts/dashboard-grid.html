@@ -1,51 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="../styles/base.css">
-  <link rel="stylesheet" href="../styles/grid.css">
-  <link rel="stylesheet" href="../styles/flexbox.css">
-</head>
-<body class="db-body">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/grid.css" />
+    <link rel="stylesheet" href="../styles/flexbox.css" />
+  </head>
+  <body class="db-body">
+    <div class="dashboard">
+      <aside class="db-sidebar">
+        <div class="db-logo">AM Portfolio</div>
+        <nav class="db-nav global-nav">
+          <a href="../index.html">Home</a>
+          <a href="../Lab_02/profile.html">Profile</a>
+          <a href="../Lab_02/schedule.html">Schedule</a>
+          <a href="../Lab_02/registration.html">Register</a>
+          <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Exercises ▾</a>
+            <div class="dropdown-content">
+              <a href="../exercises/selectors.html">Selectors</a>
+              <a href="../exercises/typography.html">Typography</a>
+              <a href="../exercises/backgrounds.html">Backgrounds</a>
+              <a href="../exercises/images.html">Images</a>
+              <a href="../exercises/cards.html">Cards</a>
+              <a href="../exercises/transforms.html">Transforms</a>
+              <a href="../exercises/dark-mode.html">Dark Mode</a>
+              <a href="../exercises/advanced.html">Advanced</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Layouts ▾</a>
+            <div class="dropdown-content">
+              <a href="display-exercises.html">Display</a>
+              <a href="flexbox-exercises.html">Flexbox</a>
+              <a href="grid-exercises.html">Grid</a>
+              <a href="position-exercises.html">Position</a>
+              <a href="holy-grail-comparison.html">Holy Grail</a>
+              <a href="landing-page.html">Landing Page</a>
+              <a href="dashboard-grid.html">Dashboard</a>
+              <a href="responsive-demo.html">Responsive Demo</a>
+              <a href="responsive-table.html">Responsive Table</a>
+              <a href="magazine-float.html">Magazine Float</a>
+              <a href="magazine-grid.html">Magazine Grid</a>
+              <a href="portfolio-mixed.html">Portfolio</a>
+            </div>
+          </div>
+        </nav>
+      </aside>
 
-  <div class="dashboard">
+      <div class="db-main">
+        <header class="db-header">
+          <h2>Welcome back, Abdul Majid</h2>
+          <span>CS 224L — Web Technologies</span>
+        </header>
 
-    <aside class="db-sidebar">
-      <div class="db-logo">AM Portfolio</div>
-      <nav class="db-nav">
-        <a href="../../index.html">Home</a>
-        <a href="../../lab02/profile.html">Profile</a>
-        <a href="../../lab02/schedule.html">Schedule</a>
-        <a href="#">Analytics</a>
-        <a href="#">Settings</a>
-      </nav>
-    </aside>
+        <div class="db-stats">
+          <div class="stat-card">
+            <h3>4</h3>
+            <p>Labs Done</p>
+          </div>
+          <div class="stat-card">
+            <h3>12</h3>
+            <p>Tasks Completed</p>
+          </div>
+          <div class="stat-card">
+            <h3>89%</h3>
+            <p>Score Average</p>
+          </div>
+          <div class="stat-card">
+            <h3>2</h3>
+            <p>Labs Remaining</p>
+          </div>
+        </div>
 
-    <div class="db-main">
-
-      <header class="db-header">
-        <h2>Welcome back, Abdul Majid</h2>
-        <span>CS 224L — Web Technologies</span>
-      </header>
-
-      <div class="db-stats">
-        <div class="stat-card"><h3>4</h3><p>Labs Done</p></div>
-        <div class="stat-card"><h3>12</h3><p>Tasks Completed</p></div>
-        <div class="stat-card"><h3>89%</h3><p>Score Average</p></div>
-        <div class="stat-card"><h3>2</h3><p>Labs Remaining</p></div>
+        <section class="db-content">
+          <h3>Recent Activity</h3>
+          <p>
+            Lab 02 — HTML structure: profile, schedule, form, navigation.
+            Deployed on GitHub Pages.
+          </p>
+          <p>
+            Lab 03-04 — CSS styling: selectors, typography, backgrounds, images,
+            box model, transforms.
+          </p>
+          <p>
+            Lab 05-06 — Layout techniques: display, floats, positioning,
+            Flexbox, Grid, media queries.
+          </p>
+        </section>
       </div>
-
-      <section class="db-content">
-        <h3>Recent Activity</h3>
-        <p>Lab 02 — HTML structure: profile, schedule, form, navigation. Deployed on GitHub Pages.</p>
-        <p>Lab 03-04 — CSS styling: selectors, typography, backgrounds, images, box model, transforms.</p>
-        <p>Lab 05-06 — Layout techniques: display, floats, positioning, Flexbox, Grid, media queries.</p>
-      </section>
-
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
